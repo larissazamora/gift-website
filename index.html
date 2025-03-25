@@ -5,95 +5,122 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Gift Website</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <style>
+         body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+         }
+
+         .container-body {
+            background-color: rgb(159, 79, 57);
+            color: #ffffff;
+         }
+
+         .container-detalhes {
+            background-color: rgb(159, 79, 57);
+            color: #ffffff;
+         }
+
+         .header-overlay {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/2289944/pexels-photo-2289944.jpeg');
+            background-size: cover;
+            background-position: center;
+         }
+
+         .header-content {
+            position: relative;
+            z-index: 2;
+         }
+      </style>
    </head>
-   <header class="bg-dark text-white text-center py-5 vh-100 w-100" 
-        style="background-image: url('https://images.pexels.com/photos/2289944/pexels-photo-2289944.jpeg'); 
-               background-size: cover; 
-               background-position: center; 
-               background-color: rgba(0, 0, 0, 0.5); 
-               background-blend-mode: overlay;">
-  <div class="container h-100 d-flex flex-column justify-content-center">
-    <h1 class="display-4 fw-bold">Alysson e Juliana</h1>
-    <p class="lead" >É uma alegria imensa testemunhar o amor de vocês e celebrar este momento tão especial. Que cada novo dia juntos seja melhor que o anterior e que essa união seja sempre marcada por respeito, carinho e muitas aventuras. Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, decidimos oferecer algo único e inesquecível, clique no botão abaixo para ver o presente de casamento de vocês.</p>
-    <button type="button" class="btn btn-dark btn-sm mx-auto d-block mt-3 py-3 fw-bold" onclick="showInfo()">Clique para ver o destino</button>
-  </div>
-</header>
    <body>
-      <div class="container-body" style="display: none;">
-        <div class="container">
+      <header class="bg-dark text-white text-center py-5 vh-100 w-100 header-overlay">
+         <div class="container h-100 d-flex flex-column justify-content-center header-content">
+            <h1 class="display-4 fw-bold" style="color: rgb(159, 79, 57); margin-bottom: 35px;">Alysson e Juliana</h1>
+            <p class="lead" style="color: #ffffff; margin-bottom: 35px;">É uma alegria imensa testemunhar o amor de vocês e celebrar este momento tão especial. Que cada novo dia juntos seja melhor que o anterior e que essa união seja sempre marcada por respeito, carinho e muitas aventuras. Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, decidimos oferecer um presente único e inesquecível.</p>
+            <button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold" style="background-color: rgb(159, 79, 57); color: #ffffff;" onclick="showInfo()">Clique para ver o destino</button>
+         </div>
+      </header>
+      <div  class="container-body" style="display: none;">
+         <div class="container" style="padding: 4%;" id="containerBody">
             <div class="row">
-                <div class="col-12">
-                    <h1 id="destino" class="text-center my-5">Destino</h1>
-                </div>
-                <div class="col-12">
-                    <p class="text-center"> Vocês irão embarcar para <strong>Santiago, Chile</strong>. Aproveitem essa oportunidade para explorarem novos lugares e criarem ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de experiências compartilhadas, e nada melhor que uma viagem para celebrar e criar uma lembrança eterna desse momento tão importante na vida de vocês. </p>
-                </div>
-                <img class="chile" src="imagens/bandeira.jpg" alt="bandeira-do-chile"
+               <div class="col-md-6">
+                  <img src="imagens/bandeira.jpg" class="img-fluid" alt="Exemplo de imagem">
+               </div>
+               <div class="col-md-5">
+                  <h5 class="card-title fs-2" style="margin-bottom: 20px; margin-top: 20px;">Destino</h5>
+                  <p class="card-text" style="margin-bottom: 50px;">Vocês irão embarcar para <strong>Santiago, Chile</strong>. Aproveitem essa oportunidade para explorarem novos lugares e criarem ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de experiências compartilhadas, e nada melhor que uma viagem para celebrar e criar uma lembrança eterna desse momento tão importante na vida de vocês.</p>
+               </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center my-5">Passeios Inclusos</h1>
-                </div>
+         </div>
+         <div id="containerDetalhes" class="container-detalhes" style=" margin: 4%;">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <h1 class="text-center">Passeios Inclusos</h1>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="card-group">
-            <div class="card" style="width: 18rem; padding: 10px;">
-                <img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Termas de Colina <span class="badge bg-success">Reservado</span></h5>
-                    <div class="border-top my-3"></div>
-                    <p class="card-text"> Estas piscinas de águas termais, situadas aos pés da Cordilheira dos Andes, proporcionam um momento de relaxamento ao ar livre com uma vista de tirar o fôlego.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
+            <div class="card-group" style="padding-left: 8%; padding-right: 8%; margin-top: 2%;">
+               <div class="card" style="width: 18rem; padding: 10px; margin-right: 2%;">
+                  <img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                     <h5 class="card-title">Termas de Colina <span class="badge bg-success">Reservado</span></h5>
+                     <div class="border-top my-3"></div>
+                     <p class="card-text">Estas piscinas de águas termais, situadas aos pés da Cordilheira dos Andes, proporcionam um momento de relaxamento ao ar livre com uma vista de tirar o fôlego.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                     <li class="list-group-item">
                         <span><strong>Ponto de Encontro</strong></span>
                         <p>Camino Farellones 15000, Lo Barnechea, Región Metropolitana, Chile</p>
-                    </li>
-                    <li class="list-group-item">
+                     </li>
+                     <li class="list-group-item">
                         <span><strong>Telefone</strong></span>
                         <p>+56 2 2233 0000</p>
-                    </li>
-                    <li class="list-group-item">
+                     </li>
+                     <li class="list-group-item">
                         <span><strong>Data e Horário</strong></span>
                         <p>Segunda a Domingo: 10:00 - 20:00</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="card" style="width: 18rem; padding: 10px;">
-                <img class="card-img-top" src="https://destinosnotaveis.com.br/wp-content/uploads/2019/07/valle-nevado-santiago-20-1024x640.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Valle Nevado <span class="badge bg-success">Reservado</span></h5>
-                    <div class="border-top my-3"></div>
-                    <p class="card-text">O Valle Nevado é a principal estação de esqui da América do Sul em número de visitantes. Possui toda infraestrutura para quem quer praticar esportes de neve. Possui 34 pistas de esqui de quatro níveis diferentes, totalizando 40 quilômetros de pistas.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
+                     </li>
+                  </ul>
+               </div>
+               <div class="card" style="width: 18rem; padding: 10px;">
+                  <img class="card-img-top" src="https://destinosnotaveis.com.br/wp-content/uploads/2019/07/valle-nevado-santiago-20-1024x640.jpg" alt="Card image cap">
+                  <div class="card-body">
+                     <h5 class="card-title">Valle Nevado <span class="badge bg-success">Reservado</span></h5>
+                     <div class="border-top my-3"></div>
+                     <p class="card-text">O Valle Nevado é a principal estação de esqui da América do Sul em número de visitantes. Possui toda infraestrutura para quem quer praticar esportes de neve. Possui 34 pistas de esqui de quatro níveis diferentes, totalizando 40 quilômetros de pistas.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                     <li class="list-group-item">
                         <span><strong>Ponto de Encontro</strong></span>
                         <p>Camino Farellones 15000, Lo Barnechea, Región Metropolitana, Chile</p>
-                    </li>
-                    <li class="list-group-item">
+                     </li>
+                     <li class="list-group-item">
                         <span><strong>Telefone</strong></span>
                         <p>+56 2 2233 0000</p>
-                    </li>
-                    <li class="list-group-item">
+                     </li>
+                     <li class="list-group-item">
                         <span><strong>Data e Horário</strong></span>
                         <p>Segunda a Domingo: 10:00 - 20:00</p>
-                    </li>
-                </ul>
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </div>
-      </div>
-      <div>
-        <h1 class="text-center my-5">Recomendações</h1>
+            <div>
+               <h1 class="text-center my-5">Recomendações</h1>
+            </div>
+         </div>
       </div>
       <script>
-        function showInfo() {
-            document.querySelector('.container-body').style.display = 'block';
-            document.getElementById('destino').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>  
+         function showInfo() {
+             document.querySelector('.container-body').style.display = 'block';
+             document.getElementById('containerBody').scrollIntoView({ behavior: 'smooth' });
+         }
+      </script>  
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
    </body>
 </html>
