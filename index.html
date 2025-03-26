@@ -25,48 +25,100 @@
 
          .header-overlay {
             position: relative;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/2289944/pexels-photo-2289944.jpeg');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/header.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center top; /* Ajusta a posição da imagem de fundo para cima */
          }
 
          .header-content {
             position: relative;
             z-index: 2;
          }
+
+         .background-image {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/destino.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 17%;
+            color: #ffffff;
+         }
+
+         .background-image .content {
+            position: relative;
+            z-index: 2;
+            text-align: center; /* Centraliza o texto */
+         }
+
+         .background-image .content p {
+            font-size: 1.25rem; /* Aumenta o tamanho da fonte do texto */
+         }
+
+         .square-image {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%; /* Mantém a proporção quadrada */
+            position: relative;
+         }
+
+         .square-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
+         }
+
+         .small-square-image {
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%; /* Mantém a proporção quadrada menor */
+            position: relative;
+         }
+
+         .small-square-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
+         }
+
+         .small-font {
+            text-align: center;
+            font-size: 1.25rem; /* Define o tamanho da fonte para ser igual ao texto da linha 101 */
+         }
       </style>
    </head>
    <body>
       <header class="bg-dark text-white text-center py-5 vh-100 w-100 header-overlay">
          <div class="container h-100 d-flex flex-column justify-content-center header-content">
-            <h1 class="display-4 fw-bold" style="color: rgb(159, 79, 57); margin-bottom: 35px;">Alysson e Juliana</h1>
+            <h1 class="display-4 fw-bold" style="color: rgb(255, 255, 255); margin-bottom: 35px;">Alysson e Juliana</h1>
             <p class="lead" style="color: #ffffff; margin-bottom: 35px;">É uma alegria imensa testemunhar o amor de vocês e celebrar este momento tão especial. Que cada novo dia juntos seja melhor que o anterior e que essa união seja sempre marcada por respeito, carinho e muitas aventuras. Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, decidimos oferecer um presente único e inesquecível.</p>
             <button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold" style="background-color: rgb(159, 79, 57); color: #ffffff;" onclick="showInfo()">Clique para ver o destino</button>
          </div>
       </header>
-      <div  class="container-body" style="display: none;">
-         <div class="container" style="padding: 4%;" id="containerBody">
-            <div class="row">
-               <div class="col-md-6">
-                  <img src="imagens/bandeira.jpg" class="img-fluid" alt="Exemplo de imagem">
-               </div>
-               <div class="col-md-5">
-                  <h5 class="card-title fs-2" style="margin-bottom: 20px; margin-top: 20px;">Destino</h5>
-                  <p class="card-text" style="margin-bottom: 50px;">Vocês irão embarcar para <strong>Santiago, Chile</strong>. Aproveitem essa oportunidade para explorarem novos lugares e criarem ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de experiências compartilhadas, e nada melhor que uma viagem para celebrar e criar uma lembrança eterna desse momento tão importante na vida de vocês.</p>
-               </div>
+      <div class="container-body" style="display: none;">
+         <div class="background-image">
+            <div class="content">
+               <p class="card-text" style="margin-bottom: 60px;">Vocês irão embarcar para <strong>Santiago, Chile</strong>. Aproveitem essa oportunidade para explorarem novos lugares e criarem ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de experiências compartilhadas, e nada melhor que uma viagem para celebrar e criar uma lembrança eterna desse momento tão importante na vida de vocês. Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes, saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam ainda mais os laços que os unem. Vocês merecem!</p>
             </div>
          </div>
-         <div id="containerDetalhes" class="container-detalhes" style=" margin: 4%;">
+         <div id="containerDetalhes" class="container-detalhes" style="margin: 4%;">
             <div class="container">
                <div class="row">
                   <div class="col-12">
-                     <h1 class="text-center">Passeios Inclusos</h1>
+                     <h1 class="small-font">Além de todo o conforto e experiência planejada, pensamos também nos detalhes e incluímos passeios incríveis para tornar cada momento ainda mais memorável. Preparem-se para viverem dias inesquecíveis.</h1>
                   </div>
                </div>
             </div>
             <div class="card-group" style="padding-left: 8%; padding-right: 8%; margin-top: 2%;">
                <div class="card" style="width: 18rem; padding: 10px; margin-right: 2%;">
-                  <img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg" alt="Card image cap">
+                  <div class="small-square-image">
+                     <img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg" alt="Card image cap">
+                  </div>
                   <div class="card-body">
                      <h5 class="card-title">Termas de Colina <span class="badge bg-success">Reservado</span></h5>
                      <div class="border-top my-3"></div>
@@ -88,7 +140,9 @@
                   </ul>
                </div>
                <div class="card" style="width: 18rem; padding: 10px;">
-                  <img class="card-img-top" src="https://destinosnotaveis.com.br/wp-content/uploads/2019/07/valle-nevado-santiago-20-1024x640.jpg" alt="Card image cap">
+                  <div class="small-square-image">
+                     <img class="card-img-top" src="imagens/vallenevado.webp" alt="Card image cap">
+                  </div>
                   <div class="card-body">
                      <h5 class="card-title">Valle Nevado <span class="badge bg-success">Reservado</span></h5>
                      <div class="border-top my-3"></div>
@@ -111,14 +165,14 @@
                </div>
             </div>
             <div>
-               <h1 class="text-center my-5">Recomendações</h1>
+               <h1 class="small-font text-center my-5">Da mesma forma em que planejamos passeios especiais, também reservamos um tempo livre para que vocês possam explorar e aproveitar do jeito que quiserem. E, para tornar essa experiência ainda mais incrível, selecionamos algumas recomendações imperdíveis!</h1>
             </div>
          </div>
       </div>
       <script>
          function showInfo() {
              document.querySelector('.container-body').style.display = 'block';
-             document.getElementById('containerBody').scrollIntoView({ behavior: 'smooth' });
+             document.querySelector('.container-body').scrollIntoView({ behavior: 'smooth' });
          }
       </script>  
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
