@@ -16,11 +16,6 @@
                 overflow-x: hidden;
             }
 
-            .container-detalhes {
-                background-color: rgb(172, 105, 86);
-                color: #ffffff;
-            }
-
             .container-body {
                 background-color: rgb(172, 105, 86);
                 color: #ffffff;
@@ -30,7 +25,7 @@
                 position: relative;
                 width: 100%;
                 height: 100vh; /* Full viewport height */
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/de.jpg');
+                background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('imagens/de.jpg');
                 background-size: cover;
                 background-position: center;
                 display: flex;
@@ -45,7 +40,7 @@
 
             .background-image {
                 position: relative;
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/destino.jpg');
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('imagens/destino.jpg');
                 background-size: cover;
                 background-position: center;
                 padding-top: 17%;
@@ -73,7 +68,6 @@
                 font-family: 'Montserrat', sans-serif;
                 font-size: 18px;
                 line-height: 1.7;
-                text-shadow: 1px 1px 3px rgba(209, 11, 11, 0.3);
                 color: rgba(255, 255, 255, 0.9);
                 margin-bottom: 20px;
             }
@@ -97,7 +91,7 @@
             }
 
             .text-container-homepage {
-                background: rgba(90, 22, 4, 0.2); /* Preto com 50% de opacidade */
+                background: rgba(90, 22, 4, 0.5); /* Preto com 50% de opacidade */
             }
 
             .background-image .content {
@@ -111,7 +105,7 @@
                 align-items: center;
                 color: #ffffff;
                 padding: 20px;
-                box-sizing: border-box; /* E
+                box-sizing: border-box;
             }
 
             .background-image .content p {
@@ -180,7 +174,11 @@
    </head>
    <body>
       <header class="header-overlay">
-         <div class="header-content">
+         <div class="header-content" style="
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     ">
             <h1 >Alysson e Juliana</h1>
             <p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
                É uma alegria imensa testemunhar o amor de vocês e celebrar este momento tão especial. Que cada novo dia juntos seja melhor que o anterior e que essa união seja sempre marcada por respeito, carinho e muitas aventuras. Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, decidimos oferecer um presente único e inesquecível. Que tal uma aventura que os leve a um lugar onde o frio pode surpreender mas o calor da cultura local aquece qualquer coração? Onde montanhas tocam o céu e a natureza se revela em extremos, fazendo cada pôr do sol ser um espetáculo à parte com paisagens que parecem a entrada de um sonho. Já conseguem imaginar? Ainda não? Então aqui vai mais um dica: Que tal brindar o amor de vocês com um bom vinho local? Preparem-se, o destino já esta traçado, o embarque já está marcado, os detalhes foram cuidadosamente escolhidos e a aventura está apenas começando!
@@ -204,16 +202,11 @@
             </div>
          </div>
          <div id="containerDetalhes" class="container-detalhes">
-            <div >
-               <div class="row">
-                  <div class="col-12" style="width: 100%;">
-                     <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%;">
-                        Além de todo o conforto e experiência planejada, pensamos também nos detalhes
-                        e incluímos passeios incríveis para tornar cada momento ainda mais memorável.
-                        Preparem-se para dias inesquecíveis.
-                     </p>
-                  </div>
-               </div>
+            <div>
+               <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+                  <strong>Passeios que Preparamos</strong><br>
+                  Para aproveitarem o destino
+               </p>
             </div>
             <div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
                <div class="card" style="padding: 10px;">
@@ -269,16 +262,15 @@
                </div>
             </div>
          </div>
-         <div class="mt-5">
+         <div>
             <div>
-                <p class="small-font text-container-homepage " style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%;">
-                    Da mesma forma em que planejamos passeios especiais, também reservamos um tempo livre
-                    para que vocês possam explorar e aproveitar do jeito que quiserem. E, para tornar essa experiência
-                    ainda mais incrível, selecionamos algumas recomendações imperdíveis!
+                <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+                    <strong>Recomendações Extras</strong><br>
+                    Para explorar a cidade
                 </p>
              </div>
             <!-- Card 1 - Imagem à esquerda -->
-            <div class="row align-items-center mb-4" style="padding: 8%;">
+            <div class="row align-items-center" style="padding: 8%; background-color: white; color: gray; margin-bottom: 0;">
                <div class="col-md-4">
                   <img src="imagens/patiobellavista.jpg" class="img-fluid rounded" alt="Imagem Card 1">
                </div>
@@ -289,7 +281,7 @@
             </div>
 
             <!-- Card 2 - Imagem à direita -->
-            <div class="row align-items-center mb-4" style="padding: 8%;">
+            <div class="row align-items-center" style="padding: 8%; background-color: white; color: gray; margin-bottom: 0;">
                <div class="col-md-8">
                   <h5 class="fw-bold">Sky Costanera</h5>
                   <p>Mirante instalado no maior prédio da América do Sul e que oferece uma visão 360° da capital chilena. A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura moderna de Santiago, além de um pôr do sol inesquecível.</p>
@@ -298,32 +290,14 @@
                   <img src="imagens/sky.jpg" class="img-fluid rounded" alt="Imagem Card 2">
                </div>
             </div>
-
-            <!-- Card 3 - Imagem à esquerda -->
-            <div class="row align-items-center mb-4" style="padding: 8%;">
-               <div class="col-md-4">
-                  <img src="imagens/card3.jpg" class="img-fluid rounded" alt="Imagem Card 3">
-               </div>
-               <div class="col-md-8">
-                  <h5 class="fw-bold">Título do Card 3</h5>
-                  <p>Descrição do terceiro card. Este é um exemplo de texto que descreve o conteúdo do card.</p>
-               </div>
-            </div>
-
-            <!-- Card 4 - Imagem à direita -->
-            <div class="row align-items-center mb-4" style="padding: 8%;">
-               <div class="col-md-8">
-                  <h5 class="fw-bold">Título do Card 4</h5>
-                  <p>Descrição do quarto card. Este é um exemplo de texto que descreve o conteúdo do card.</p>
-               </div>
-               <div class="col-md-4">
-                  <img src="imagens/card4.jpg" class="img-fluid rounded" alt="Imagem Card 4">
-               </div>
-            </div>
          </div>
-         <section class="container my-5" style="padding: 8%;">
-            <h2 class="text-center mb-4">Facilidade e praticidade para sua viagem</h2>
-            <p class="text-center mb-5">Pensando em tornar essa experiência mais simples e econômica, reunimos algumas sugestões de aplicativos e ferramentas indispensáveis. Desde apps de transporte público, restaurantes e até cartões internacionais. São dicas certeiras de quem já testou e aprovou!</p>
+         <div>
+            <div>
+               <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+                  <strong>Aplicativos e Ferramentas</strong><br>
+                  Para facilitar a sua viagem
+               </p>
+            </div>
           
             <div class="row row-cols-1 row-cols-md-3 g-4">
               
@@ -361,25 +335,20 @@
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
-                 <img src="imagens/chip_internet.jpg" class="card-img-top" alt="Cartão de transporte" style="width: 40%;max-height: 40%;padding: 5%;">
-                 <div class="card-body">
-                   <h5 class="card-title">Fique conectado</h5>
-                   <p class="card-text">O ideal é adquirir um chip internacional ainda no Brasil, para que já chegue ativado e pronto para uso. <strong>Dica extra: </strong>certifique-se de que seu celular está desbloqueado para aceitar chips internacionais e já chegue com os dados móveis desativados para evitar cobranças de roaming.</p>
-                 </div>
-               </div>
-             </div>
-          
             </div>
-          </section>
+         </div>
+         <div>
+            <div>
+               <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+                  <strong>Aos Noivos</strong><br>
+                  Uma mensagem especial
+               </p>
+            </div>
           
-         <div class="container mt-5">
             <div class="row align-items-center">
                <!-- Caixa de texto no lado esquerdo -->
                <div class="col-md-6">
                   <div class="p-4">
-                     <h2 class="fw-bold">Aos noivos</h2>
                      <p>
                         Este presente é um pedacinho do que sentimos por vocês dois. Um gesto simbólico, mas cheio de afeto, para expressar o quanto essa união nos orgulha.
 
