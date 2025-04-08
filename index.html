@@ -5,6 +5,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Gift Website</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
       <style>
          body, html {
             margin: 0;
@@ -13,42 +16,101 @@
             overflow-x: hidden;
          }
 
-         .container-body {
-            background-color: rgb(159, 79, 57);
+         .container-detalhes {
+            background-color: rgb(172, 105, 86);
             color: #ffffff;
          }
 
-         .container-detalhes {
-            background-color: rgb(159, 79, 57);
+         .container-body {
+            background-color: rgb(172, 105, 86);
             color: #ffffff;
          }
 
          .header-overlay {
             position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/de.jpg');
             background-size: cover;
-            background-position: center -40px; /* Move a imagem 40px para cima */
-         }
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box; /* Ensure padding doesn't affect layout */
+        }
 
-         .header-content {
-            position: relative;
-            z-index: 2;
-         }
-
-         .background-image {
+        .background-image {
             position: relative;
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/destino.jpg');
             background-size: cover;
             background-position: center;
             padding: 17%;
             color: #ffffff;
-         }
+        }
 
-         .background-image .content {
+        .header-content {
+            z-index: 2;
+            max-width: 100%; /* Adjust width for smaller screens */
+        }
+
+        .header-content h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 60px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .header-content p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+            text-shadow: 1px 1px 3px rgba(209, 11, 11, 0.3);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .cta-button-homepage {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFD700;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgb(159, 79, 57);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button-homepage:hover {
+            background-color: rgba(142, 124, 22, 0.8);
+            color: #ffffff;
+        }
+
+        .text-container-homepage {
+            background: rgba(90, 22, 4, 0.2); /* Preto com 50% de opacidade */
+        }
+
+        .background-image .content {
             position: relative;
             z-index: 2;
             text-align: center; /* Centraliza o texto */
-         }
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box; /* E
+        }
 
          .background-image .content p {
             font-size: 1.25rem; /* Aumenta o tamanho da fonte do texto */
@@ -90,29 +152,55 @@
             text-align: center;
             font-size: 1.25rem; /* Define o tamanho da fonte para ser igual ao texto da linha 101 */
          }
+
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 36px; /* Reduce font size for smaller screens */
+                margin-bottom: 10px;
+            }
+
+            .header-content p {
+                font-size: 14px; /* Reduce font size for smaller screens */
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+
+            .cta-button-homepage {
+                font-size: 16px; /* Reduce button font size */
+                padding: 8px 16px; /* Adjust button padding */
+            }
+
+            .header-overlay {
+                padding: 10px; /* Add padding for smaller screens */
+            }
+        }
       </style>
    </head>
    <body>
-      <header class="bg-dark text-white text-center py-5 vh-100 w-100 header-overlay">
-         <div class="container h-100 d-flex flex-column justify-content-center header-content">
-            <h1 class="display-4 fw-bold" style="color: rgb(255, 255, 255); margin-bottom: 35px;">Alysson e Juliana</h1>
-            <p class="card-text" style="color: #ffffff; margin-bottom: 35px; font-weight: bold;">
+      <header class="header-overlay">
+         <div class="header-content">
+            <h1 >Alysson e Juliana</h1>
+            <p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
                É uma alegria imensa testemunhar o amor de vocês e celebrar este momento tão especial. Que cada novo dia juntos seja melhor que o anterior e que essa união seja sempre marcada por respeito, carinho e muitas aventuras. Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, decidimos oferecer um presente único e inesquecível. Que tal uma aventura que os leve a um lugar onde o frio pode surpreender mas o calor da cultura local aquece qualquer coração? Onde montanhas tocam o céu e a natureza se revela em extremos, fazendo cada pôr do sol ser um espetáculo à parte com paisagens que parecem a entrada de um sonho. Já conseguem imaginar? Ainda não? Então aqui vai mais um dica: Que tal brindar o amor de vocês com um bom vinho local? Preparem-se, o destino já esta traçado, o embarque já está marcado, os detalhes foram cuidadosamente escolhidos e a aventura está apenas começando!
             </p>
-            <button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold" style="background-color: rgb(159, 79, 57); color: #ffffff;" onclick="showInfo()">Clique para ver o destino</button>
+            <button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage cta-button-homepage" style="background-color: rgb(159, 79, 57); color: #ffffff;" onclick="showInfo()">Clique para ver o destino</button>
          </div>
       </header>
       <div class="container-body" style="display: none;">
-         <div class="background-image">
+         <div class="background-image header-content">
             <div class="content">
-               <p class="card-text" style="margin-bottom: 60px;">Vocês irão embarcar para <strong>Santiago, Chile</strong>. Aproveitem essa oportunidade para explorarem novos lugares e criarem ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de experiências compartilhadas, e nada melhor que uma viagem para celebrar e criar uma lembrança eterna desse momento tão importante na vida de vocês. Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes, saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam ainda mais os laços que os unem. Vocês merecem!</p>
+               <p class="card-text  text-container-homepage" style="margin-bottom: 60px; padding-top: 30px; padding-bottom: 30px">Vocês irão embarcar para <strong>Santiago, Chile</strong>. Aproveitem essa oportunidade para explorarem novos lugares e criarem ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de experiências compartilhadas, e nada melhor que uma viagem para celebrar e criar uma lembrança eterna desse momento tão importante na vida de vocês. Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes, saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam ainda mais os laços que os unem. Vocês merecem!</p>
             </div>
          </div>
-         <div id="containerDetalhes" class="container-detalhes" style="margin: 4%;">
-            <div class="container">
+         <div id="containerDetalhes" class="container-detalhes">
+            <div >
                <div class="row">
-                  <div class="col-12">
-                     <h1 class="small-font">Além de todo o conforto e experiência planejada, pensamos também nos detalhes e incluímos passeios incríveis para tornar cada momento ainda mais memorável. Preparem-se para dias inesquecíveis.</h1>
+                  <div class="col-12" style="width: 100%;">
+                     <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%;">
+                        Além de todo o conforto e experiência planejada, pensamos também nos detalhes
+                        e incluímos passeios incríveis para tornar cada momento ainda mais memorável.
+                        Preparem-se para dias inesquecíveis.
+                     </p>
                   </div>
                </div>
             </div>
@@ -124,7 +212,10 @@
                   <div class="card-body">
                      <h5 class="card-title">Termas de Colina <span class="badge bg-success">Reservado</span></h5>
                      <div class="border-top my-3"></div>
-                     <p class="card-text">Estas piscinas de águas termais, situadas aos pés da Cordilheira dos Andes, proporcionam um momento de relaxamento ao ar livre com uma vista de tirar o fôlego.</p>
+                     <p class="card-text">
+                        Estas piscinas de águas termais, situadas aos pés da Cordilheira dos Andes,
+                        proporcionam um momento de relaxamento ao ar livre com uma vista de tirar o fôlego.
+                    </p>
                   </div>
                   <ul class="list-group list-group-flush">
                      <li class="list-group-item">
@@ -166,11 +257,15 @@
                   </ul>
                </div>
             </div>
-            <div>
-               <h1 class="small-font text-center my-5">Da mesma forma em que planejamos passeios especiais, também reservamos um tempo livre para que vocês possam explorar e aproveitar do jeito que quiserem. E, para tornar essa experiência ainda mais incrível, selecionamos algumas recomendações imperdíveis!</h1>
-            </div>
          </div>
-         <div class="container mt-5">
+         <div class="mt-5">
+            <div>
+                <p class="small-font text-container-homepage " style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%;">
+                    Da mesma forma em que planejamos passeios especiais, também reservamos um tempo livre
+                    para que vocês possam explorar e aproveitar do jeito que quiserem. E, para tornar essa experiência
+                    ainda mais incrível, selecionamos algumas recomendações imperdíveis!
+                </p>
+             </div>
             <!-- Card 1 - Imagem à esquerda -->
             <div class="row align-items-center mb-4">
                <div class="col-md-4">
@@ -277,14 +372,24 @@
                      <p>
                         Este presente é um pedacinho do que sentimos por vocês dois. Um gesto simbólico, mas cheio de afeto, para expressar o quanto essa união nos orgulha.
 
-Da Edlaine, a tia mais velha, que mesmo longe — cada hora em um canto, mas sempre presente em sentimento — guarda no coração uma admiração antiga pelo noivo. Um carinho cultivado desde os primeiros sorrisos, que só cresceu com o tempo. E hoje, esse afeto se estende naturalmente à noiva, que com seu jeito doce e acolhedor, conquistou não só o coração do noivo, mas também o dela. Ver vocês juntos, felizes e construindo um caminho lado a lado, é um presente para quem acompanhou essa história de longe, mas sempre com o coração pertinho.
-
-Da Larissa, ou melhor “Iaia”, tia mais nova do noivo, que cresceu ao lado dele dividindo risos, histórias e segredos. Sempre o viu como um porto seguro — um irmão que protege, que ensina, que cuida. E agora vê esse mesmo cuidado se transformar em amor na vida a dois. A noiva chegou e, de forma natural, encontrou espaço no coração de Larissa. Alguém que veio para somar, para fazer brilhar ainda mais esse amor bonito.
-
-Do João, o tio recém-chegado na família, mas que já sente que faz parte de algo muito maior. Desde o primeiro contato, criou um carinho enorme por vocês dois. Porque quando a gente encontra pessoas de coração leve e verdadeiro, como vocês, o afeto vem rápido e fica. A torcida dele é gigante, o carinho é sincero, e o orgulho de fazer parte desse momento é imenso.
-
+                    </p>
+                    <br>
+                        <p>Da <strong>Edlaine</strong>, que mesmo longe — cada hora em um canto, mas sempre presente em sentimento — guarda no coração uma admiração antiga pelo noivo. Um carinho cultivado desde os primeiros sorrisos, que só cresceu com o tempo. E hoje, esse afeto se estende naturalmente à noiva, que com seu jeito doce e acolhedor, conquistou não só o coração do noivo, mas também o dela. Ver vocês juntos, felizes e construindo um caminho lado a lado, é um presente para quem acompanhou essa história de longe, mas sempre com o coração pertinho.
+                        </p>
+                        <br>
+                        <p>
+Da <strong>Larissa</strong>, ou melhor “Iaia”, tia mais nova do noivo, que cresceu ao lado dele dividindo risos, histórias e segredos. Sempre o viu como um porto seguro — um irmão que protege, que ensina, que cuida. E agora vê esse mesmo cuidado se transformar em amor na vida a dois. A noiva chegou e, de forma natural, encontrou espaço no coração de Larissa. Alguém que veio para somar, para fazer brilhar ainda mais esse amor bonito.
+</p>
+<br>
+                        <p>
+Do <strong>João</strong>, o tio recém-chegado na família, mas que já sente que faz parte de algo muito maior. Desde o primeiro contato, criou um carinho enorme por vocês dois. Porque quando a gente encontra pessoas de coração leve e verdadeiro, como vocês, o afeto vem rápido e fica. A torcida dele é gigante, o carinho é sincero, e o orgulho de fazer parte desse momento é imenso.
+</p>
+<br>
+<p>
 De nós três, com nossas histórias e olhares diferentes, nasce esse presente — feito com amor, para celebrar o amor de vocês. Que essa nova fase seja leve, bonita e cheia daquilo que já está tão presente entre vocês: parceria, respeito e alegria.
-
+</p>
+<br>
+<p>
 Com muito carinho,
 Any, Lala e Jão
                      </p>
