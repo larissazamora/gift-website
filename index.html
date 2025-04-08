@@ -1,180 +1,182 @@
 <!doctype html>
 <html lang="en">
    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Gift Website</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-      <style>
-         body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow-x: hidden;
-         }
-
-         .container-detalhes {
-            background-color: rgb(172, 105, 86);
-            color: #ffffff;
-         }
-
-         .container-body {
-            background-color: rgb(172, 105, 86);
-            color: #ffffff;
-         }
-
-         .header-overlay {
-            position: relative;
-            width: 100%;
-            height: 100vh; /* Full viewport height */
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/de.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #ffffff;
-            padding: 20px;
-            box-sizing: border-box; /* Ensure padding doesn't affect layout */
-        }
-
-        .background-image {
-            position: relative;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/destino.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 17%;
-            color: #ffffff;
-        }
-
-        .header-content {
-            z-index: 2;
-            max-width: 100%; /* Adjust width for smaller screens */
-        }
-
-        .header-content h1 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 60px;
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
-        }
-
-        .header-content p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            line-height: 1.7;
-            text-shadow: 1px 1px 3px rgba(209, 11, 11, 0.3);
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 20px;
-        }
-
-        .cta-button-homepage {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: bold;
-            color: #FFD700;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: rgb(159, 79, 57);
-            border: none;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button-homepage:hover {
-            background-color: rgba(142, 124, 22, 0.8);
-            color: #ffffff;
-        }
-
-        .text-container-homepage {
-            background: rgba(90, 22, 4, 0.2); /* Preto com 50% de opacidade */
-        }
-
-        .background-image .content {
-            position: relative;
-            z-index: 2;
-            text-align: center; /* Centraliza o texto */
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-            padding: 20px;
-            box-sizing: border-box; /* E
-        }
-
-         .background-image .content p {
-            font-size: 1.25rem; /* Aumenta o tamanho da fonte do texto */
-         }
-
-         .square-image {
-            width: 100%;
-            height: 0;
-            padding-bottom: 100%; /* Mantém a proporção quadrada */
-            position: relative;
-         }
-
-         .square-image img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
-         }
-
-         .small-square-image {
-            width: 100%;
-            height: 0;
-            padding-bottom: 75%; /* Mantém a proporção quadrada menor */
-            position: relative;
-         }
-
-         .small-square-image img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
-         }
-
-         .small-font {
-            text-align: center;
-            font-size: 1.25rem; /* Define o tamanho da fonte para ser igual ao texto da linha 101 */
-         }
-
-        @media (max-width: 768px) {
-            .header-content h1 {
-                font-size: 36px; /* Reduce font size for smaller screens */
-                margin-bottom: 10px;
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gift Website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow-x: hidden;
             }
 
-            .header-content p {
-                font-size: 14px; /* Reduce font size for smaller screens */
-                line-height: 1.5;
-                margin-bottom: 15px;
+            .container-detalhes {
+                background-color: rgb(172, 105, 86);
+                color: #ffffff;
             }
 
-            .cta-button-homepage {
-                font-size: 16px; /* Reduce button font size */
-                padding: 8px 16px; /* Adjust button padding */
+            .container-body {
+                background-color: rgb(172, 105, 86);
+                color: #ffffff;
             }
 
             .header-overlay {
-                padding: 10px; /* Add padding for smaller screens */
+                position: relative;
+                width: 100%;
+                height: 100vh; /* Full viewport height */
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/de.jpg');
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #ffffff;
+                padding: 20px;
+                box-sizing: border-box; /* Ensure padding doesn't affect layout */
             }
-        }
-      </style>
+
+            .background-image {
+                position: relative;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagens/destino.jpg');
+                background-size: cover;
+                background-position: center;
+                padding-top: 17%;
+                padding-bottom: 17%;
+                color: #ffffff;
+            }
+
+            .header-content {
+                z-index: 2;
+                max-width: 100%; /* Adjust width for smaller screens */
+                height: 100vh;
+            }
+
+            .header-content h1 {
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 60px;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                margin-bottom: 20px;
+            }
+
+            .header-content p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                line-height: 1.7;
+                text-shadow: 1px 1px 3px rgba(209, 11, 11, 0.3);
+                color: rgba(255, 255, 255, 0.9);
+                margin-bottom: 20px;
+            }
+
+            .cta-button-homepage {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: #FFD700;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                background-color: rgb(159, 79, 57);
+                border: none;
+                transition: all 0.3s ease;
+            }
+
+            .cta-button-homepage:hover {
+                background-color: rgba(142, 124, 22, 0.8);
+                color: #ffffff;
+            }
+
+            .text-container-homepage {
+                background: rgba(90, 22, 4, 0.2); /* Preto com 50% de opacidade */
+            }
+
+            .background-image .content {
+                position: relative;
+                z-index: 2;
+                text-align: center; /* Centraliza o texto */
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                padding: 20px;
+                box-sizing: border-box; /* E
+            }
+
+            .background-image .content p {
+                font-size: 1.25rem; /* Aumenta o tamanho da fonte do texto */
+            }
+
+            .square-image {
+                width: 100%;
+                height: 0;
+                padding-bottom: 100%; /* Mantém a proporção quadrada */
+                position: relative;
+            }
+
+            .square-image img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
+            }
+
+            .small-square-image {
+                width: 100%;
+                height: 0;
+                padding-bottom: 75%; /* Mantém a proporção quadrada menor */
+                position: relative;
+            }
+
+            .small-square-image img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
+            }
+
+            .small-font {
+                text-align: center;
+                font-size: 1.25rem; /* Define o tamanho da fonte para ser igual ao texto da linha 101 */
+            }
+
+            @media (max-width: 768px) {
+                .header-content h1 {
+                    font-size: 36px; /* Reduce font size for smaller screens */
+                    margin-bottom: 10px;
+                }
+
+                .header-content p {
+                    font-size: 14px; /* Reduce font size for smaller screens */
+                    line-height: 1.5;
+                    margin-bottom: 15px;
+                }
+
+                .cta-button-homepage {
+                    font-size: 16px; /* Reduce button font size */
+                    padding: 8px 16px; /* Adjust button padding */
+                }
+
+                .header-overlay {
+                    padding: 10px; /* Add padding for smaller screens */
+                }
+            }
+        </style>
    </head>
    <body>
       <header class="header-overlay">
@@ -188,8 +190,17 @@
       </header>
       <div class="container-body" style="display: none;">
          <div class="background-image header-content">
-            <div class="content">
-               <p class="card-text  text-container-homepage" style="margin-bottom: 60px; padding-top: 30px; padding-bottom: 30px">Vocês irão embarcar para <strong>Santiago, Chile</strong>. Aproveitem essa oportunidade para explorarem novos lugares e criarem ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de experiências compartilhadas, e nada melhor que uma viagem para celebrar e criar uma lembrança eterna desse momento tão importante na vida de vocês. Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes, saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam ainda mais os laços que os unem. Vocês merecem!</p>
+            <div class="content" style="height: 100%;">
+               <p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
+                    Vocês irão embarcar para <strong>Santiago, Chile</strong>.
+                    Aproveitem essa oportunidade para explorarem novos lugares e criarem
+                    ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de 
+                    experiências compartilhadas, e nada melhor que uma viagem para celebrar e
+                    criar uma lembrança eterna desse momento tão importante na vida de vocês.
+                    Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes,
+                    saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam
+                    ainda mais os laços que os unem. Vocês merecem!
+                </p>
             </div>
          </div>
          <div id="containerDetalhes" class="container-detalhes">
@@ -204,8 +215,8 @@
                   </div>
                </div>
             </div>
-            <div class="card-group" style="padding-left: 8%; padding-right: 8%; margin-top: 2%;">
-               <div class="card" style="width: 18rem; padding: 10px; margin-right: 2%;">
+            <div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
+               <div class="card" style="padding: 10px;">
                   <div class="small-square-image">
                      <img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg" alt="Card image cap">
                   </div>
@@ -232,7 +243,7 @@
                      </li>
                   </ul>
                </div>
-               <div class="card" style="width: 18rem; padding: 10px;">
+               <div class="card" style="padding: 10px;">
                   <div class="small-square-image">
                      <img class="card-img-top" src="imagens/vallenevado.webp" alt="Card image cap">
                   </div>
@@ -267,7 +278,7 @@
                 </p>
              </div>
             <!-- Card 1 - Imagem à esquerda -->
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center mb-4" style="padding: 8%;">
                <div class="col-md-4">
                   <img src="imagens/patiobellavista.jpg" class="img-fluid rounded" alt="Imagem Card 1">
                </div>
@@ -278,7 +289,7 @@
             </div>
 
             <!-- Card 2 - Imagem à direita -->
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center mb-4" style="padding: 8%;">
                <div class="col-md-8">
                   <h5 class="fw-bold">Sky Costanera</h5>
                   <p>Mirante instalado no maior prédio da América do Sul e que oferece uma visão 360° da capital chilena. A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura moderna de Santiago, além de um pôr do sol inesquecível.</p>
@@ -289,7 +300,7 @@
             </div>
 
             <!-- Card 3 - Imagem à esquerda -->
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center mb-4" style="padding: 8%;">
                <div class="col-md-4">
                   <img src="imagens/card3.jpg" class="img-fluid rounded" alt="Imagem Card 3">
                </div>
@@ -300,7 +311,7 @@
             </div>
 
             <!-- Card 4 - Imagem à direita -->
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center mb-4" style="padding: 8%;">
                <div class="col-md-8">
                   <h5 class="fw-bold">Título do Card 4</h5>
                   <p>Descrição do quarto card. Este é um exemplo de texto que descreve o conteúdo do card.</p>
@@ -310,7 +321,7 @@
                </div>
             </div>
          </div>
-         <section class="container my-5">
+         <section class="container my-5" style="padding: 8%;">
             <h2 class="text-center mb-4">Facilidade e praticidade para sua viagem</h2>
             <p class="text-center mb-5">Pensando em tornar essa experiência mais simples e econômica, reunimos algumas sugestões de aplicativos e ferramentas indispensáveis. Desde apps de transporte público, restaurantes e até cartões internacionais. São dicas certeiras de quem já testou e aprovou!</p>
           
@@ -318,8 +329,8 @@
               
               <!-- Card 1: Aplicativos de Metrô e Trem -->
               <div class="col">
-                <div class="card h-100">
-                  <img src="imagens/mesa.jpg" class="card-img-top" alt="App de Metrô e Trem">
+                <div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
+                  <img src="imagens/mesa.jpg" class="card-img-top" alt="App de Metrô e Trem" style="width: 40%;max-height: 40%;padding: 5%;">
                   <div class="card-body">
                     <h5 class="card-title">Reservas em restaurantes</h5>
                     <p class="card-text">Quer economizar e ainda garantir uma boa mesa?
@@ -330,8 +341,8 @@
           
               <!-- Card 2: Cartão de Transporte -->
               <div class="col">
-                <div class="card h-100">
-                  <img src="imagens/chip_internet.jpg" class="card-img-top" alt="Cartão de transporte">
+                <div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
+                  <img src="https://play-lh.googleusercontent.com/S8Vpq8o0W1CNMU7LqF_SNkt8guhQhtOBpqrhmsNjrHerrHcalqjUJdHhrS77FbrrDA=w480-h960-rw" class="card-img-top" alt="Cartão de transporte" style="width: 40%;max-height: 40%;padding: 5%;">
                   <div class="card-body">
                     <h5 class="card-title">Fique conectado</h5>
                     <p class="card-text">O ideal é adquirir um chip internacional ainda no Brasil, para que já chegue ativado e pronto para uso. <strong>Dica extra: </strong>certifique-se de que seu celular está desbloqueado para aceitar chips internacionais e já chegue com os dados móveis desativados para evitar cobranças de roaming.</p>
@@ -341,8 +352,8 @@
           
               <!-- Card 3: Cartão Wise -->
               <div class="col">
-                <div class="card h-100">
-                  <img src="imagens/cartaowise.jpg" class="card-img-top" alt="Cartão Wise">
+                <div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
+                  <img src="imagens/cartaowise.jpg" class="card-img-top" alt="Cartão Wise" style="width: 40%;max-height: 40%;padding: 5%;">
                   <div class="card-body">
                     <h5 class="card-title">Cartão Wise</h5>
                     <p class="card-text">Uma opção internacional que permite converter e gastar dinheiro em diversas moedas com tarifas mais baixas que os bancos tradicionais. Com ele, você pode carregar o saldo pelo app, acompanhar os gastos em tempo real e utilizar tanto no transporte quanto em compras no exterior, tudo de forma segura e econômica.</p>
@@ -351,8 +362,8 @@
               </div>
 
               <div class="col">
-               <div class="card h-100">
-                 <img src="imagens/chip_internet.jpg" class="card-img-top" alt="Cartão de transporte">
+                <div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
+                 <img src="imagens/chip_internet.jpg" class="card-img-top" alt="Cartão de transporte" style="width: 40%;max-height: 40%;padding: 5%;">
                  <div class="card-body">
                    <h5 class="card-title">Fique conectado</h5>
                    <p class="card-text">O ideal é adquirir um chip internacional ainda no Brasil, para que já chegue ativado e pronto para uso. <strong>Dica extra: </strong>certifique-se de que seu celular está desbloqueado para aceitar chips internacionais e já chegue com os dados móveis desativados para evitar cobranças de roaming.</p>
