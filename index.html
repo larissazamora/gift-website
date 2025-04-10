@@ -180,9 +180,11 @@
 				<button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage cta-button-homepage" style="background-color: rgb(219, 71, 30); color: #ffffff;" onclick="showInfo()">Clique para ver o destino</button>
 			</div>
 		</header>
+
 		<!-- Conteúdo principal -->
 		<div class="container-body" style="display: none;">
-			<!-- Explicação do destino -->
+
+			<!-- Destino -->
 			<div class="background-image header-content">
 				<div class="content" style="height: 100%;">
 					<p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
@@ -197,6 +199,7 @@
 					</p>
 				</div>
 			</div>
+
 			<!-- Instruções para passaporte -->
 			<div class="background-image header-content" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('imagens/passaporte.jpg'); background-size: cover; background-position: center;">
 				<div class="content" style="height: 100%; padding: 50px;">
@@ -210,15 +213,17 @@
 					</a>
 				</div>
 			</div>
+
 			<!-- Passeios reservados -->
 			<div id="containerDetalhes" class="container-detalhes">
 				<!-- Título -->
 				<div>
 					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: -2%;">
-						<strong>Passeios que Preparamos</strong><br>
+						<strong>Passeios que Reservamos</strong><br>
 						Para aproveitarem o destino
 					</p>
 				</div>
+
 				<!-- Cards de passeios reservados -->
 				<div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
 					<!-- Termas de Colina -->
@@ -249,6 +254,7 @@
 							</li>
 						</ul>
 					</div>
+
 					<!-- Valle Nevado -->
 					<div class="card" style="padding: 10px;">
 						<div class="small-square-image">
@@ -276,6 +282,7 @@
 					</div>
 				</div>
 			</div>
+
 			<!-- Passeios turísticos recomendados -->
 			<div>
 				<!-- Título -->
@@ -285,39 +292,174 @@
 						Para explorar a cidade
 					</p>
 				</div>
-				<!-- Pátio Bellavista -->
-				<div class="row align-items-center" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
-					<div class="col-md-4">
-						<img src="imagens/patio_bella_vista.jpg" class="img-fluid" alt="Imagem Card 1" style="width: 100%; height:250px;">
+
+            <div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
+					<!-- Pátio Bellavista -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/patio_bella_vista.jpg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Pátio Bellavista</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								O Patio é um famoso centro comercial, gastronômico e cultural, sendo um dos locais mais visitados por brasileiros 
+                        que vão ao Chile. Você pode visitá-lo a qualquer momento do dia. Seja para almoçar, jantar, ou fazer compras. 
+                        Ótimo para experimentar a vida noturna em Santiago.
+							</p>
+						</div>
 					</div>
-					<div class="col-md-8">
-						<h5 class="fw-bold"> Patio Bellavista</h5>
-						<p>O Patio é um famoso centro comercial, gastronômico e cultural, sendo um dos locais mais visitados por brasileiros que vão ao Chile. Você pode visitá-lo a qualquer momento do dia. Seja para almoçar, jantar, ou fazer compras. Ótimo para experimentar a vida noturna em Santiago.</p>
+
+               <!-- Sky Costanera -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/sky_costanera.jpg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Sky Costanera</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								Mirante instalado no maior prédio da América do Sul e que oferece uma visão 360° da capital chilena. 
+                        A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura 
+                        moderna de Santiago, além de um pôr do sol inesquecível.
+							</p>
+						</div>
 					</div>
-				</div>
-				<!-- Bairro Paris Londres -->
-				<div class="row align-items-center" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
-					<div class="col-md-4">
-						<img src="imagens/bairro_paris_londres.jpg" class="img-fluid" alt="Imagem Card 1" style="width: 100%; height:250px;">
+
+					<!-- Restaurante Giratório -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/restaurante_giratorio.png" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Restaurante Giratório</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								O Giratorio é um restaurante localizado no topo do Sky Costanera no bairro 
+                        Providencia, um dos bairros mais bonitos de Santiago, mais especificamente na Av. Nueva Providencia, 2250.
+							</p>
+						</div>
 					</div>
-					<div class="col-md-8">
-						<h5 class="fw-bold"> Paris-Londres</h5>
-						<p>O Bairro Paris-Londres é um bairro turístico no centro histórico de Santiago, Chile. O bairro é conhecido pelo seu estilo arquitetônico europeu e pelas suas ruas estreitas e sinuosas.</p>
+
+					<!-- Bairro Paris Londres -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/bairro_paris_londres.jpg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Bairro Paris-Londres</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								O Bairro Paris-Londres é um bairro turístico no centro histórico de Santiago, Chile. 
+                        O bairro é conhecido pelo seu estilo arquitetônico europeu e pelas suas ruas estreitas e sinuosas.
+							</p>
+						</div>
 					</div>
-				</div>
-				<!-- Sky Costanera -->
-				<div class="row align-items-center mt-4" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
-					<div class="col-md-4">
-						<img src="imagens/sky_costanera.jpg" class="img-fluid" alt="Imagem Card 2" style="width: 100%; height:250px;">
+
+					<!-- Plaza de Armas -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/plaza_armas.png" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Plaza de Armas</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								Fundada por  Pedro de Valdivia em 1541, originalmente tinha como função ser um campo de treinamento militar 
+                        e centro estratégico do assentamento espanhol para sua expansão e conquista.
+							</p>
+						</div>
 					</div>
-					<div class="col-md-8">
-						<h5 class="fw-bold">Sky Costanera</h5>
-						<p>
-							Mirante instalado no maior prédio da América do Sul e que oferece uma visão 360° da capital chilena. A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura moderna de Santiago, além de um pôr do sol inesquecível.
-						</p>
+
+					<!-- Palacio de la Moneda -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/palacio_de_las_monedas.png" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Palacio de la Moneda</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								Também conhecido como “Palacio Velho” o palácio da moneda é um lindo edifício de puro estilo 
+                        neoclássico com influencias do dórico romano que vale a pena conhecer, ela se encontra nas 
+                        ruas Morande com Huérfanos. 
+							</p>
+						</div>
+					</div>
+
+					<!-- Cerro Santa Lucia -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/cerro_santa_lucia.png" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Cerro Santa Lucia</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								Uns dos lugares mais conhecidos de Santiago, embora não muito alto, se eleva uns 70 metros 
+                        e oferece umas das melhores vistas de 360 graus da cidade, O cerro tem sido parte dos acontecimentos 
+                        mais importantes de Santiago desde seu nascimento oficial e inclusive desde muito antes.
+							</p>
+						</div>
+					</div>
+
+					<!-- Cerro San Cristóbal -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/cerro_san_cristóbal.png" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Cerro San Cristóbal</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								Com uma altitude de 880 m.s.n.m. o cerro San Cristóbal é uns dos lugares mais emblemáticos de Santiago. 
+                        Pode ser recorrido a pé, em carro ou bicicleta. Nele você encontrará o santuário e mirador da Virgem do cerro 
+                        São Cristóbal, o Zoológico Nacional de Chile, Jardim Japonês, o funicular e o teleférico. No topo tem um pequeno 
+                        centro comercial, onde pode comprar camiseta, artesanato e presentes típicos. Para subir e descer também 
+                        pode usar o funicular ou o teleférico.
+							</p>
+						</div>
+					</div>
+
+					<!-- Paseo Bandera -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/pase_bandera.png" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Paseo Bandera</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								Dentro do centro histórico de Santiago, esta localizada a rua Bandera, começa pelo sul desde 
+                        Avenida Libertador General Bernardo O´Higgins mais conhecida como “Alameda” e continua ao norte 
+                        ate o rio Mapocho. No seu melhor momento numerosos bares e restaurantes eram frequentados por escritores 
+                        e poetas, na atualidade a colorida rua abriga importantes prédios históricos e entidades financeiras do pais 
+                        como a Bolsa de comercio de Santiago e Museu de Arte Precolombino.
+							</p>
+						</div>
+					</div>
+
+					<!-- Parque Bicentenário -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/parque_bicentenario.png" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Parque Bicentenário</h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								O Parque Bicentenário de Vitacura é uma das áreas verdes mais importantes de Santiago, com uma extensão 
+                        total de 27 hectares ao longo das margens orientais do rio Mapocho. 
+                        Está localizado entre o Vial Pérez Zujovic Knot e a Isabel Montt Street. O parque abriga cerca de 5.460 árvores, 
+                        das quais mais de 2.600 são espécies nativas, o que contribui para a riqueza de sua biodiversidade. 
+                        Uma das maiores atrações é a adorável lagoa do norte, o acesso à Isabel Montt Street. Esse habitat coexiste 
+                        harmoniosamente os cisnes em preto, Taguas, garças e trilhas, fornecendo um show natural que encanta os visitantes.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
+
 			<!-- Aplicativos e ferramentas -->
 			<div>
 				<!-- Título -->
@@ -359,6 +501,7 @@
 					</div>
 				</div>
 			</div>
+
 			<!-- Mensagem final -->
 			<div>
 				<!-- Título -->
@@ -368,6 +511,7 @@
 						Uma mensagem especial
 					</p>
 				</div>
+
 				<!-- Texto da mensagem -->
 				<div class="row align-items-center">
 					<div class="col-md-6">
@@ -452,6 +596,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- Rodapé -->
 		<footer id="footer" class="bg-dark text-white text-center py-4 mt-5" style="display: none;">
 			<div class="container">
@@ -463,6 +608,7 @@
 				</p>
 			</div>
 		</footer>
+
 		<script>
 			function showInfo() {
 			    // Exibe o conteúdo principal
