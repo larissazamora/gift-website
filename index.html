@@ -1,472 +1,478 @@
 <!doctype html>
 <html lang="en">
-   <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gift Website</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-        <style>
-            body, html {
-                margin: 0;
-                padding: 0;
-                height: 100%;
-                overflow-x: hidden;
-            }
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-            .container-body {
-                background-color: rgb(219, 71, 30);
-                color: #ffffff;
-            }
+		<title>Gift Website</title>
 
-            .header-overlay {
-                position: relative;
-                width: 100%;
-                height: 100vh; /* Full viewport height */
-                background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('imagens/header_noivos.jpg');
-                background-size: cover;
-                background-position: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                color: #ffffff;
-                padding: 20px;
-                box-sizing: border-box; /* Ensure padding doesn't affect layout */
-            }
-
-            .background-image {
-                position: relative;
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('imagens/destino.jpg');
-                background-size: cover;
-                background-position: center;
-                padding-top: 17%;
-                padding-bottom: 17%;
-                color: #ffffff;
-            }
-
-            .header-content {
-                z-index: 2;
-                max-width: 100%; /* Adjust width for smaller screens */
-                height: 100vh;
-            }
-
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+		<style>
+			body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+			}
+			.container-body {
+            background-color: rgb(219, 71, 30);
+            color: #ffffff;
+			}
+			.header-overlay {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('imagens/header_noivos.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box; /* Ensure padding doesn't affect layout */
+			}
+			.background-image {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('imagens/destino.jpg');
+            background-size: cover;
+            background-position: center;
+            padding-top: 17%;
+            padding-bottom: 17%;
+            color: #ffffff;
+			}
+			.header-content {
+            z-index: 2;
+            max-width: 100%; /* Adjust width for smaller screens */
+            height: 100vh;
+			}
+			.header-content h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 60px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+			}
+			.header-content p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+			}
+			.cta-button-homepage {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFD700;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgb(159, 79, 57);
+            border: none;
+            transition: all 0.3s ease;
+			}
+			.cta-button-homepage:hover {
+            background-color: rgba(142, 86, 22, 0.8);
+            color: #ffffff;
+			}
+			.text-container-homepage {
+			   background: rgba(87, 48, 7, 0.5); /* Preto com 50% de opacidade */
+			}
+			.background-image .content {
+            position: relative;
+            z-index: 2;
+            text-align: center; /* Centraliza o texto */
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+			}
+			.background-image .content p {
+			   font-size: 1.25rem; /* Aumenta o tamanho da fonte do texto */
+			}
+			.square-image {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%; /* Mantém a proporção quadrada */
+            position: relative;
+			}
+			.square-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
+			}
+			.small-square-image {
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%; /* Mantém a proporção quadrada menor */
+            position: relative;
+			}
+			.small-square-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
+			}
+			.small-font {
+            text-align: center;
+            font-size: 1.25rem; /* Define o tamanho da fonte para ser igual ao texto da linha 101 */
+			}
+			.custom-border {
+   			border-color: rgb(219, 71, 30) !important; /* Define a cor laranja */
+			}
+			.btn:hover {
+            background-color: rgba(255, 255, 255, 0.8); /* Cor mais clara no hover */
+            color: rgb(255, 166, 107); /* Texto laranja no hover */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+			}
+			@media (max-width: 768px) {
             .header-content h1 {
-                font-family: 'Bebas Neue', sans-serif;
-                font-size: 60px;
-                color: white;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                margin-bottom: 20px;
-            }
+            font-size: 36px; /* Reduce font size for smaller screens */
+            margin-bottom: 10px;
+			}
+			.header-content p {
+            font-size: 14px; /* Reduce font size for smaller screens */
+            line-height: 1.5;
+            margin-bottom: 15px;
+			}
+			.cta-button-homepage {
+            font-size: 16px; /* Reduce button font size */
+            padding: 8px 16px; /* Adjust button padding */
+			}
+			.header-overlay {
+	   		padding: 10px; /* Add padding for smaller screens */
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Página inicial -->
+		<header class="header-overlay">
+			<div class="header-content" style="
+				display: flex;
+				flex-direction: column;
+				justify-content: center;">
+				<h1 >Alysson e Juliana</h1>
+				<p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
+					Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, 
+					decidimos oferecer um presente único e inesquecível. Que tal uma aventura que os leve a um lugar de extremos,
+					com uma beleza quase irreal e com lugares que não se explicam, se sentem. Onde montanhas tocam o céu e a natureza se revela,
+					fazendo cada pôr do sol ser um espetáculo à parte, com paisagens que parecem a entrada de um sonho. Já conseguem imaginar? 
+					Ainda não? Então aqui vai mais um dica: Que tal brindar o amor de vocês com um bom vinho local?
+				</p>
+				<button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage cta-button-homepage" style="background-color: rgb(219, 71, 30); color: #ffffff;" onclick="showInfo()">Clique para ver o destino</button>
+			</div>
+		</header>
+		<!-- Conteúdo principal -->
+		<div class="container-body" style="display: none;">
+			<!-- Explicação do destino -->
+			<div class="background-image header-content">
+				<div class="content" style="height: 100%;">
+					<p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
+						Vocês irão embarcar para <strong>Santiago, Chile</strong>.
+						Aproveitem essa oportunidade para explorarem novos lugares e criarem
+						ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de 
+						experiências compartilhadas, e nada melhor que uma viagem para celebrar e
+						criar uma lembrança eterna desse momento tão importante na vida de vocês.
+						Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes,
+						saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam
+						ainda mais os laços que os unem. Vocês merecem!
+					</p>
+				</div>
+			</div>
+			<!-- Instruções para passaporte -->
+			<div class="background-image header-content" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('imagens/passaporte.jpg'); background-size: cover; background-position: center;">
+				<div class="content" style="height: 100%; padding: 50px;">
+					<p class="text-container-homepage" style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; line-height: 1.8; color: #ffffff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">
+						Agora que o destino foi revelado, é hora de se preparar.  Antes de fazerem as malas, precisam fazer os passaportes para darmos continuidade nessa aventura. O procedimento é feito pelo site da Polícia Federal e envolve o agendamento de um atendimento presencial. Corram!
+					</p>
+					<a href="https://www.gov.br/pt-br/servicos/obter-passaporte-comum-para-brasileiro" target="_blank" 
+						class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage" 
+						style="background-color: rgb(219, 71, 30); color: #ffffff; width: auto; padding: 10px 20px; text-align: center;">
+					Clique e siga as instruções
+					</a>
+				</div>
+			</div>
+			<!-- Passeios reservados -->
+			<div id="containerDetalhes" class="container-detalhes">
+				<!-- Título -->
+				<div>
+					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: -2%;">
+						<strong>Passeios que Preparamos</strong><br>
+						Para aproveitarem o destino
+					</p>
+				</div>
+				<!-- Cards de passeios reservados -->
+				<div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
+					<!-- Termas de Colina -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Termas de Colina <span class="badge bg-success">Reservado</span></h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">
+								Estas piscinas de águas termais, situadas aos pés da Cordilheira dos Andes,
+								proporcionam um momento de relaxamento ao ar livre com uma vista de tirar o fôlego.
+							</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<span><strong>Ponto de Encontro</strong></span>
+								<p>Camino Farellones 15000, Lo Barnechea, Región Metropolitana, Chile</p>
+							</li>
+							<li class="list-group-item">
+								<span><strong>Telefone</strong></span>
+								<p>+56 2 2233 0000</p>
+							</li>
+							<li class="list-group-item">
+								<span><strong>Data e Horário</strong></span>
+								<p>Segunda a Domingo: 10:00 - 20:00</p>
+							</li>
+						</ul>
+					</div>
+					<!-- Valle Nevado -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/valle_nevado.webp" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Valle Nevado <span class="badge bg-success">Reservado</span></h5>
+							<div class="border-top my-3 custom-border"></div>
+							<p class="card-text">O Valle Nevado é a principal estação de esqui da América do Sul em número de visitantes. Possui toda infraestrutura para quem quer praticar esportes de neve. Possui 34 pistas de esqui de quatro níveis diferentes, totalizando 40 quilômetros de pistas.</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<span><strong>Ponto de Encontro</strong></span>
+								<p>Camino Farellones 15000, Lo Barnechea, Región Metropolitana, Chile</p>
+							</li>
+							<li class="list-group-item">
+								<span><strong>Telefone</strong></span>
+								<p>+56 2 2233 0000</p>
+							</li>
+							<li class="list-group-item">
+								<span><strong>Data e Horário</strong></span>
+								<p>Segunda a Domingo: 10:00 - 20:00</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Passeios turísticos recomendados -->
+			<div>
+				<!-- Título -->
+				<div>
+					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+						<strong>Recomendações Extras</strong><br>
+						Para explorar a cidade
+					</p>
+				</div>
+				<!-- Pátio Bellavista -->
+				<div class="row align-items-center" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
+					<div class="col-md-4">
+						<img src="imagens/patio_bella_vista.jpg" class="img-fluid" alt="Imagem Card 1" style="width: 100%; height:250px;">
+					</div>
+					<div class="col-md-8">
+						<h5 class="fw-bold"> Patio Bellavista</h5>
+						<p>O Patio é um famoso centro comercial, gastronômico e cultural, sendo um dos locais mais visitados por brasileiros que vão ao Chile. Você pode visitá-lo a qualquer momento do dia. Seja para almoçar, jantar, ou fazer compras. Ótimo para experimentar a vida noturna em Santiago.</p>
+					</div>
+				</div>
+				<!-- Bairro Paris Londres -->
+				<div class="row align-items-center" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
+					<div class="col-md-4">
+						<img src="imagens/bairro_paris_londres.jpg" class="img-fluid" alt="Imagem Card 1" style="width: 100%; height:250px;">
+					</div>
+					<div class="col-md-8">
+						<h5 class="fw-bold"> Paris-Londres</h5>
+						<p>O Bairro Paris-Londres é um bairro turístico no centro histórico de Santiago, Chile. O bairro é conhecido pelo seu estilo arquitetônico europeu e pelas suas ruas estreitas e sinuosas.</p>
+					</div>
+				</div>
+				<!-- Sky Costanera -->
+				<div class="row align-items-center mt-4" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
+					<div class="col-md-4">
+						<img src="imagens/sky_costanera.jpg" class="img-fluid" alt="Imagem Card 2" style="width: 100%; height:250px;">
+					</div>
+					<div class="col-md-8">
+						<h5 class="fw-bold">Sky Costanera</h5>
+						<p>
+							Mirante instalado no maior prédio da América do Sul e que oferece uma visão 360° da capital chilena. A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura moderna de Santiago, além de um pôr do sol inesquecível.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Aplicativos e ferramentas -->
+			<div>
+				<!-- Título -->
+				<div>
+					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+						<strong>Aplicativos e Ferramentas</strong><br>
+						Para facilitar a sua viagem
+					</p>
+				</div>
+				<!-- Container -->
+				<div class="container mt-4">
+					<div class="row row-cols-1 row-cols-md-3 g-4">
+						<!-- Chip telefônico -->
+						<div class="col">
+							<div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
+								<img src="https://play-lh.googleusercontent.com/S8Vpq8o0W1CNMU7LqF_SNkt8guhQhtOBpqrhmsNjrHerrHcalqjUJdHhrS77FbrrDA=w480-h960-rw" class="card-img-top" alt="Cartão de transporte" style="width: 40%;max-height: 40%;padding: 5%;">
+								<div class="card-body">
+									<h5 class="card-title">Fique conectado</h5>
+									<p class="card-text">
+										O ideal é adquirir um Chip Internacional ainda no Brasil, para que já chegue ativado e pronto para uso. Recomendamos o <strong>Nomad</strong>, que é um Chip Virtual e pode ser adquirido através do aplicativo Nomad.
+									</p>
+									<a href="https://play.google.com/store/apps/details?id=com.nomad.app" target="_blank" class="btn btn-primary d-block mx-auto">Baixar App</a>
+								</div>
+							</div>
+						</div>
+						<!-- Cartão Wise -->
+						<div class="col">
+							<div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
+								<img src="imagens/cartao_wise.jpg" class="card-img-top" alt="Cartão Wise" style="width: 40%;max-height: 40%;padding: 5%;">
+								<div class="card-body">
+									<h5 class="card-title">Cartão Wise</h5>
+									<p class="card-text">
+										Uma opção internacional que permite converter e gastar dinheiro em diversas moedas com tarifas mais baixas que os bancos tradicionais. Com ele, você pode carregar o saldo pelo app, acompanhar os gastos em tempo real e utilizar tanto no transporte quanto em compras no exterior, tudo de forma segura e econômica.
+									</p>
+									<a href="https://apps.apple.com/br/app/wise/id123456789" target="_blank" class="btn btn-primary d-block mx-auto">Baixar App</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Mensagem final -->
+			<div>
+				<!-- Título -->
+				<div>
+					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+						<strong>Aos Noivos</strong><br>
+						Uma mensagem especial
+					</p>
+				</div>
+				<!-- Texto da mensagem -->
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<div class="p-4">
+							<p>
+								Este presente é um pedacinho do que sentimos por vocês dois.
+							</p>
+							<br>
+                     <!-- Edlaine -->
+							<p>
+                        De <strong>Edlaine</strong>,
+                        que mesmo longe — cada hora em um canto, mas sempre presente 
+                        em sentimento — guarda no coração uma admiração antiga pelo noivo. Um carinho cultivado desde os primeiros 
+                        sorrisos, que só cresceu com o tempo. E hoje, esse afeto se estende naturalmente à noiva, 
+                        que com seu jeito doce e acolhedor, conquistou não só o coração do noivo, mas também
+                        o dela. Ver vocês juntos, felizes e construindo um caminho lado a lado, é um presente
+                        para quem acompanhou essa história de longe, mas sempre com o coração pertinho.
+							</p>
+							<br>
 
-            .header-content p {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 18px;
-                line-height: 1.7;
-                color: rgba(255, 255, 255, 0.9);
-                margin-bottom: 20px;
-            }
+                     <!-- Larissa -->
+							<p>
+								De <strong>Larissa</strong>,
+                        ou melhor “Iaia”, tia mais nova do noivo, que cresceu ao lado dele dividindo risos,
+                        histórias e segredos. Sempre o viu como um porto seguro — um irmão que protege, que ensina, que cuida.
+                        E agora vê esse mesmo cuidado se transformar em amor na vida a dois. A noiva chegou e, de forma natural,
+                        encontrou espaço no coração de Larissa. Alguém que veio para somar, para fazer brilhar ainda mais esse amor bonito.
+							</p>
+							<br>
 
-            .cta-button-homepage {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 20px;
-                font-weight: bold;
-                color: #FFD700;
-                text-decoration: none;
-                padding: 10px 20px;
-                border-radius: 5px;
-                background-color: rgb(159, 79, 57);
-                border: none;
-                transition: all 0.3s ease;
-            }
+                     <!-- João -->
+							<p>
+								De <strong>João</strong>,
+                        o tio recém-chegado na família, mas que já sente que faz parte de algo muito maior.
+                        Desde o primeiro contato, criou um carinho enorme por vocês dois. Porque quando a 
+                        gente encontra pessoas de coração leve e verdadeiro, como vocês, o afeto vem rápido e fica.
+                        A torcida dele é gigante, o carinho é sincero, e o orgulho de fazer parte desse momento é imenso.                        
+							</p>
+							<br>
+                     <!-- Encerramento -->
+							<p>
+								De nós três, com nossas histórias e olhares diferentes, nasce esse presente — feito
+                        com amor, para celebrar o amor de vocês. Que essa nova fase seja leve, bonita e cheia daquilo que 
+                        já está tão presente entre vocês: parceria, respeito e alegria.
+							</p>
+							<br>
 
-            .cta-button-homepage:hover {
-                background-color: rgba(142, 86, 22, 0.8);
-                color: #ffffff;
-            }
+                     <!-- Mensagem final -->
+							<p>
+								Com muito carinho
+								Any, Lala e Jão
+							</p>
+						</div>
+					</div>
 
-            .text-container-homepage {
-                background: rgba(87, 48, 7, 0.5); /* Preto com 50% de opacidade */
-            }
+					<!-- Carrossel de fotos -->
+					<div class="col-md-6">
+						<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                     <!-- Carrossel -->
+							<div class="carousel-inner">
+								<!-- Foto 1 -->
+								<div class="carousel-item active">
+									<img src="imagens/foto_any.jpg" class="d-block w-100 img-fluid rounded" alt="Foto 1">
+								</div>
+								<!-- Foto 2 -->
+								<div class="carousel-item">
+									<img src="imagens/foto_lari_joao.jpg" class="d-block w-100 img-fluid rounded" alt="Foto 2">
+								</div>
+							</div>
 
-            .background-image .content {
-                position: relative;
-                z-index: 2;
-                text-align: center; /* Centraliza o texto */
-                background-size: cover;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: #ffffff;
-                padding: 20px;
-                box-sizing: border-box;
-            }
-
-            .background-image .content p {
-                font-size: 1.25rem; /* Aumenta o tamanho da fonte do texto */
-            }
-
-            .square-image {
-                width: 100%;
-                height: 0;
-                padding-bottom: 100%; /* Mantém a proporção quadrada */
-                position: relative;
-            }
-
-            .square-image img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
-            }
-
-            .small-square-image {
-                width: 100%;
-                height: 0;
-                padding-bottom: 75%; /* Mantém a proporção quadrada menor */
-                position: relative;
-            }
-
-            .small-square-image img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover; /* Garante que a imagem seja redimensionada corretamente */
-            }
-
-            .small-font {
-                text-align: center;
-                font-size: 1.25rem; /* Define o tamanho da fonte para ser igual ao texto da linha 101 */
-            }
-
-            .custom-border {
-                border-color: rgb(219, 71, 30) !important; /* Define a cor laranja */
-            }
-            
-            .btn:hover {
-                background-color: rgba(255, 255, 255, 0.8); /* Cor mais clara no hover */
-                color: rgb(255, 166, 107); /* Texto laranja no hover */
-                transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
-            }
-
-            @media (max-width: 768px) {
-                .header-content h1 {
-                    font-size: 36px; /* Reduce font size for smaller screens */
-                    margin-bottom: 10px;
-                }
-
-                .header-content p {
-                    font-size: 14px; /* Reduce font size for smaller screens */
-                    line-height: 1.5;
-                    margin-bottom: 15px;
-                }
-
-                .cta-button-homepage {
-                    font-size: 16px; /* Reduce button font size */
-                    padding: 8px 16px; /* Adjust button padding */
-                }
-
-                .header-overlay {
-                    padding: 10px; /* Add padding for smaller screens */
-                }
-            }
-        </style>
-   </head>
-   <body>
-      <header class="header-overlay">
-         <div class="header-content" style="
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-     ">
-            <h1 >Alysson e Juliana</h1>
-            <p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
-               Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, decidimos oferecer um presente único e inesquecível. Que tal uma aventura que os leve a um lugar de extremos, com uma beleza quase irreal e com lugares que não se explicam, se sentem. Onde montanhas tocam o céu e a natureza se revela, fazendo cada pôr do sol ser um espetáculo à parte, com paisagens que parecem a entrada de um sonho. Já conseguem imaginar? Ainda não? Então aqui vai mais um dica: Que tal brindar o amor de vocês com um bom vinho local?
-            </p>
-            <button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage cta-button-homepage" style="background-color: rgb(219, 71, 30); color: #ffffff;" onclick="showInfo()">Clique para ver o destino</button>
-         </div>
-      </header>
-      <div class="container-body" style="display: none;">
-         <div class="background-image header-content">
-            <div class="content" style="height: 100%;">
-               <p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
-                    Vocês irão embarcar para <strong>Santiago, Chile</strong>.
-                    Aproveitem essa oportunidade para explorarem novos lugares e criarem
-                    ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de 
-                    experiências compartilhadas, e nada melhor que uma viagem para celebrar e
-                    criar uma lembrança eterna desse momento tão importante na vida de vocês.
-                    Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes,
-                    saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam
-                    ainda mais os laços que os unem. Vocês merecem!
-                </p>
-            </div>
-         </div>
-         <div class="background-image header-content" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('imagens/passaporte.jpg'); background-size: cover; background-position: center;">
-            <div class="content" style="height: 100%; padding: 50px;">
-               <p class="text-container-homepage" style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; line-height: 1.8; color: #ffffff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">
-                  Agora que o destino foi revelado, é hora de se preparar.  Antes de fazerem as malas, precisam fazer os passaportes para darmos continuidade nessa aventura. O procedimento é feito pelo site da Polícia Federal e envolve o agendamento de um atendimento presencial. Corram!
-               </p>
-               <a href="https://www.gov.br/pt-br/servicos/obter-passaporte-comum-para-brasileiro" target="_blank" 
-                  class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage" 
-                  style="background-color: rgb(219, 71, 30); color: #ffffff; width: auto; padding: 10px 20px; text-align: center;">
-                  Clique e siga as instruções
-               </a>
-            </div>
-         </div>
-         
-         <div id="containerDetalhes" class="container-detalhes">
-            <div>
-               <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: -2%;">
-                  <strong>Passeios que Preparamos</strong><br>
-                  Para aproveitarem o destino
-               </p>
-            </div>
-            <div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
-               <div class="card" style="padding: 10px;">
-                  <div class="small-square-image">
-                     <img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg" alt="Card image cap">
-                  </div>
-                  <div class="card-body">
-                     <h5 class="card-title">Termas de Colina <span class="badge bg-success">Reservado</span></h5>
-                     <div class="border-top my-3 custom-border"></div>
-                     <p class="card-text">
-                        Estas piscinas de águas termais, situadas aos pés da Cordilheira dos Andes,
-                        proporcionam um momento de relaxamento ao ar livre com uma vista de tirar o fôlego.
-                    </p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                     <li class="list-group-item">
-                        <span><strong>Ponto de Encontro</strong></span>
-                        <p>Camino Farellones 15000, Lo Barnechea, Región Metropolitana, Chile</p>
-                     </li>
-                     <li class="list-group-item">
-                        <span><strong>Telefone</strong></span>
-                        <p>+56 2 2233 0000</p>
-                     </li>
-                     <li class="list-group-item">
-                        <span><strong>Data e Horário</strong></span>
-                        <p>Segunda a Domingo: 10:00 - 20:00</p>
-                     </li>
-                  </ul>
-               </div>
-               <div class="card" style="padding: 10px;">
-                  <div class="small-square-image">
-                     <img class="card-img-top" src="imagens/valle_nevado.webp" alt="Card image cap">
-                  </div>
-                  <div class="card-body">
-                     <h5 class="card-title">Valle Nevado <span class="badge bg-success">Reservado</span></h5>
-                     <div class="border-top my-3 custom-border"></div>
-                     <p class="card-text">O Valle Nevado é a principal estação de esqui da América do Sul em número de visitantes. Possui toda infraestrutura para quem quer praticar esportes de neve. Possui 34 pistas de esqui de quatro níveis diferentes, totalizando 40 quilômetros de pistas.</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                     <li class="list-group-item">
-                        <span><strong>Ponto de Encontro</strong></span>
-                        <p>Camino Farellones 15000, Lo Barnechea, Región Metropolitana, Chile</p>
-                     </li>
-                     <li class="list-group-item">
-                        <span><strong>Telefone</strong></span>
-                        <p>+56 2 2233 0000</p>
-                     </li>
-                     <li class="list-group-item">
-                        <span><strong>Data e Horário</strong></span>
-                        <p>Segunda a Domingo: 10:00 - 20:00</p>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div>
-            <div>
-                <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
-                    <strong>Recomendações Extras</strong><br>
-                    Para explorar a cidade
-                </p>
-             </div>
-            <!-- Card 1 - Imagem à esquerda -->
-            <div class="row align-items-center" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
-               <div class="col-md-4">
-                  <img src="imagens/patio_bella_vista.jpg" class="img-fluid" alt="Imagem Card 1" style="width: 100%; height:250px;">
-               </div>
-               <div class="col-md-8">
-                  <h5 class="fw-bold"> Patio Bellavista</h5>
-                  <p>O Patio é um famoso centro comercial, gastronômico e cultural, sendo um dos locais mais visitados por brasileiros que vão ao Chile. Você pode visitá-lo a qualquer momento do dia. Seja para almoçar, jantar, ou fazer compras. Ótimo para experimentar a vida noturna em Santiago.</p>
-               </div>
-            </div>
-
-            <div class="row align-items-center" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
-               <div class="col-md-4">
-                  <img src="imagens/bairro_paris_londres.jpg" class="img-fluid" alt="Imagem Card 1" style="width: 100%; height:250px;">
-               </div>
-               <div class="col-md-8">
-                  <h5 class="fw-bold"> Paris-Londres</h5>
-                  <p>O Bairro Paris-Londres é um bairro turístico no centro histórico de Santiago, Chile. O bairro é conhecido pelo seu estilo arquitetônico europeu e pelas suas ruas estreitas e sinuosas.</p>
-               </div>
-            </div>
-
-            <!-- Card 2 - Imagem à esquerda -->
-            <div class="row align-items-center mt-4" style="padding: 0%; background-color: white; color: rgb(219, 71, 30); margin-bottom: 0;">
-               <div class="col-md-4">
-                  <img src="imagens/sky_costanera.jpg" class="img-fluid" alt="Imagem Card 2" style="width: 100%; height:250px;">
-               </div>
-               <div class="col-md-8">
-                  <h5 class="fw-bold">Sky Costanera</h5>
-                  <p>
-                     Mirante instalado no maior prédio da América do Sul e que oferece uma visão 360° da capital chilena. A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura moderna de Santiago, além de um pôr do sol inesquecível.
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div>
-            <div>
-               <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
-                  <strong>Aplicativos e Ferramentas</strong><br>
-                  Para facilitar a sua viagem
-               </p>
-            </div>
-          
-            <div class="container mt-4">
-               <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <!-- Card 1: Aplicativos de Metrô e Trem -->
-                  <div class="col">
-                     <div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
-                        <img src="imagens/mesa.jpg" class="card-img-top" alt="App de Metrô e Trem" style="width: 40%;max-height: 40%;padding: 5%;">
-                        <div class="card-body">
-                           <h5 class="card-title">Reservas em restaurantes</h5>
-                           <p class="card-text"> Com o aplicativo <strong>Mesa</strong>, você pode reservar mesas em diversos restaurantes no Chile e ainda aproveitar descontos exclusivos no horário da sua escolha. É rápido, prático e ideal para quem gosta de comer bem sem gastar muito. Basta baixar o app, escolher o restaurante, reservar e pronto — é só chegar e aproveitar!</p>
-                           <a href="https://apps.apple.com/br/app/mesa/id123456789" target="_blank" class="btn btn-primary d-block mx-auto">Baixar App</a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <!-- Card 2: Cartão de Transporte -->
-                  <div class="col">
-                     <div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
-                        <img src="https://play-lh.googleusercontent.com/S8Vpq8o0W1CNMU7LqF_SNkt8guhQhtOBpqrhmsNjrHerrHcalqjUJdHhrS77FbrrDA=w480-h960-rw" class="card-img-top" alt="Cartão de transporte" style="width: 40%;max-height: 40%;padding: 5%;">
-                        <div class="card-body">
-                           <h5 class="card-title">Fique conectado</h5>
-                           <p class="card-text">
-                              O ideal é adquirir um Chip Internacional ainda no Brasil, para que já chegue ativado e pronto para uso. Recomendamos o <strong>Nomad</strong>, que é um Chip Virtual e pode ser adquirido através do aplicativo Nomad.
-                           </p>
-                           <a href="https://play.google.com/store/apps/details?id=com.nomad.app" target="_blank" class="btn btn-primary d-block mx-auto">Baixar App</a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <!-- Card 3: Cartão Wise -->
-                  <div class="col">
-                     <div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
-                        <img src="imagens/cartao_wise.jpg" class="card-img-top" alt="Cartão Wise" style="width: 40%;max-height: 40%;padding: 5%;">
-                        <div class="card-body">
-                           <h5 class="card-title">Cartão Wise</h5>
-                           <p class="card-text">
-                              Uma opção internacional que permite converter e gastar dinheiro em diversas moedas com tarifas mais baixas que os bancos tradicionais. Com ele, você pode carregar o saldo pelo app, acompanhar os gastos em tempo real e utilizar tanto no transporte quanto em compras no exterior, tudo de forma segura e econômica.
-                           </p>
-                           <a href="https://apps.apple.com/br/app/wise/id123456789" target="_blank" class="btn btn-primary d-block mx-auto">Baixar App</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div>
-            <div>
-               <p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
-                  <strong>Aos Noivos</strong><br>
-                  Uma mensagem especial
-               </p>
-            </div>
-          
-            <div class="row align-items-center">
-               <!-- Caixa de texto no lado esquerdo -->
-               <div class="col-md-6">
-                  <div class="p-4">
-                     <p>
-                        Este presente é um pedacinho do que sentimos por vocês dois.
-
-                    </p>
-                    <br>
-                        <p>De <strong>Edlaine</strong>, que mesmo longe — cada hora em um canto, mas sempre presente em sentimento — guarda no coração uma admiração antiga pelo noivo. Um carinho cultivado desde os primeiros sorrisos, que só cresceu com o tempo. E hoje, esse afeto se estende naturalmente à noiva, que com seu jeito doce e acolhedor, conquistou não só o coração do noivo, mas também o dela. Ver vocês juntos, felizes e construindo um caminho lado a lado, é um presente para quem acompanhou essa história de longe, mas sempre com o coração pertinho.
-                        </p>
-                        <br>
-                        <p>
-De <strong>Larissa</strong>, ou melhor “Iaia”, tia mais nova do noivo, que cresceu ao lado dele dividindo risos, histórias e segredos. Sempre o viu como um porto seguro — um irmão que protege, que ensina, que cuida. E agora vê esse mesmo cuidado se transformar em amor na vida a dois. A noiva chegou e, de forma natural, encontrou espaço no coração de Larissa. Alguém que veio para somar, para fazer brilhar ainda mais esse amor bonito.
-</p>
-<br>
-                        <p>
-De <strong>João</strong>, o tio recém-chegado na família, mas que já sente que faz parte de algo muito maior. Desde o primeiro contato, criou um carinho enorme por vocês dois. Porque quando a gente encontra pessoas de coração leve e verdadeiro, como vocês, o afeto vem rápido e fica. A torcida dele é gigante, o carinho é sincero, e o orgulho de fazer parte desse momento é imenso.
-</p>
-<br>
-<p>
-De nós três, com nossas histórias e olhares diferentes, nasce esse presente — feito com amor, para celebrar o amor de vocês. Que essa nova fase seja leve, bonita e cheia daquilo que já está tão presente entre vocês: parceria, respeito e alegria.
-</p>
-<br>
-<p>
-Com muito carinho
-Any, Lala e Jão
-                     </p>
-                  </div>
-               </div>
-
-               <!-- Carousel no lado direito -->
-               <div class="col-md-6">
-                  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-                     <div class="carousel-inner">
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active">
-                           <img src="imagens/foto_any.jpg" class="d-block w-100 img-fluid rounded" alt="Foto 1">
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="carousel-item">
-                           <img src="imagens/foto_lari_joao.jpg" class="d-block w-100 img-fluid rounded" alt="Foto 2">
-                        </div>
-                     </div>
-                     <!-- Controles do Carousel -->
-                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+							<!-- Controles do Carrossel -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
-                     </button>
-                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Próximo</span>
-                     </button>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-      </div>
-
-      <footer id="footer" class="bg-dark text-white text-center py-4 mt-5" style="display: none;">
-         <div class="container">
-            <p class="mb-2" style="font-family: 'Montserrat', sans-serif; font-size: 1rem;">
-               Que o amor seja sempre o maior destino.
-            </p>
-            <p class="mb-0" style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem;">
-               © 2025 - Todos os direitos reservados.
-            </p>
-         </div>
-      </footer>
-
-      <script>
-         function showInfo() {
-             // Exibe o conteúdo principal
-             document.querySelector('.container-body').style.display = 'block';
-             document.querySelector('.container-body').scrollIntoView({ behavior: 'smooth' });
-
-             // Exibe o rodapé
-             document.getElementById('footer').style.display = 'block';
-         }
-      </script>  
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   </body>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Rodapé -->
+		<footer id="footer" class="bg-dark text-white text-center py-4 mt-5" style="display: none;">
+			<div class="container">
+				<p class="mb-2" style="font-family: 'Montserrat', sans-serif; font-size: 1rem;">
+					Que o amor seja sempre o maior destino.
+				</p>
+				<p class="mb-0" style="font-family: 'Montserrat', sans-serif; font-size: 0.9rem;">
+					© 2025 - Todos os direitos reservados.
+				</p>
+			</div>
+		</footer>
+		<script>
+			function showInfo() {
+			    // Exibe o conteúdo principal
+			    document.querySelector('.container-body').style.display = 'block';
+			    document.querySelector('.container-body').scrollIntoView({ behavior: 'smooth' });
+			
+			    // Exibe o rodapé
+			    document.getElementById('footer').style.display = 'block';
+			}
+		</script>  
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</body>
 </html>
