@@ -142,23 +142,55 @@
             color: rgb(255, 166, 107); /* Texto laranja no hover */
             transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 			}
+			.card-group {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.card-group>.card {
+				flex: 1 0 40%;
+				margin-left: 17px;
+				margin-right: 17px;
+				margin-top: 2%;
+				padding-left: 8%;
+				padding-right: 8%;
+				max-width: 40%;
+			}
+
+			.card-group>.card+.card {
+				margin-left: 17px;
+				border-left: 0;
+			}
+
+			/* Celular */
 			@media (max-width: 768px) {
-            .header-content h1 {
-            font-size: 36px; /* Reduce font size for smaller screens */
-            margin-bottom: 10px;
-			}
-			.header-content p {
-            font-size: 14px; /* Reduce font size for smaller screens */
-            line-height: 1.5;
-            margin-bottom: 15px;
-			}
-			.cta-button-homepage {
-            font-size: 16px; /* Reduce button font size */
-            padding: 8px 16px; /* Adjust button padding */
-			}
-			.header-overlay {
-	   		padding: 10px; /* Add padding for smaller screens */
-			}
+				.header-content h1 {
+				font-size: 36px; /* Reduce font size for smaller screens */
+				margin-bottom: 10px;
+				}
+				.header-content p {
+				font-size: 14px; /* Reduce font size for smaller screens */
+				line-height: 1.5;
+				margin-bottom: 15px;
+				}
+				.cta-button-homepage {
+				font-size: 16px; /* Reduce button font size */
+				padding: 8px 16px; /* Adjust button padding */
+				}
+				.header-overlay {
+				padding: 10px; /* Add padding for smaller screens */
+				}
+				
+				.card-group>.card {
+					flex: 1 0 80%;
+					margin: 17px;
+					margin-bottom: 0;
+					padding-left: 4%;
+					padding-right: 4%;
+					margin-top: 2%;
+					max-width: 100%;
+				}
 			}
 		</style>
 	</head>
@@ -225,14 +257,15 @@
 				</div>
 
 				<!-- Cards de passeios reservados -->
-				<div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
+				<div class="card-group" style=" margin-top: 2%; margin-bottom: 2%;">
 					<!-- Termas de Colina -->
 					<div class="card" style="padding: 10px;">
 						<div class="small-square-image">
-							<img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg" alt="Card image cap">
+							<img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg">
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">Termas de Colina <span class="badge bg-success">Reservado</span></h5>
+							<h5 class="card-title">Termas de Colina</h5>
+							<span class="badge bg-success">Reservado</span>
 							<div class="border-top my-3 custom-border"></div>
 							<p class="card-text">
 								Estas piscinas de águas termais, situadas aos pés da Cordilheira dos Andes,
@@ -247,18 +280,19 @@
 					<!-- Valle Nevado -->
 					<div class="card" style="padding: 10px;">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/valle_nevado.webp" alt="Card image cap">
+							<img class="card-img-top" src="imagens/valle_nevado.webp">
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">Valle Nevado <span class="badge bg-success">Reservado</span></h5>
+							<h5 class="card-title">Valle Nevado</h5>
+							<span class="badge bg-success">Reservado</span>
 							<div class="border-top my-3 custom-border"></div>
 							<p class="card-text">O Valle Nevado é a principal estação de esqui da América do Sul em número 
                         de visitantes. Possui toda infraestrutura para quem quer praticar esportes de neve. Possui 
                         34 pistas de esqui de quatro níveis diferentes, totalizando 40 quilômetros de pistas.
                      </p>
                      <p><strong>Ponto de Encontro: </strong>Camino Farellones 15000, Lo Barnechea, Región Metropolitana, Chile</p>
-                     <p><strong>Telefone</strong>+56 2 2233 0000</p>
-                     <p><strong>Data e Horário</strong>Segunda a Domingo: 10:00 - 20:00</p>
+                     <p><strong>Telefone: </strong>+56 2 2233 0000</p>
+                     <p><strong>Data e Horário: </strong>Segunda a Domingo: 10:00 - 20:00</p>
 						</div>
 					</div>
 				</div>
@@ -274,7 +308,7 @@
 					</p>
 				</div>
 
-            <div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
+            <div class="card-group" >
 					<!-- Pátio Bellavista -->
 					<div class="card" style="padding: 10px;">
 						<div class="small-square-image">
@@ -511,8 +545,8 @@
 					</p>
 				</div>
 
-            <div class="card-group" style="padding-left: 8%; padding-right: 8%;margin-top: 2%;">
-               <!-- Museo Histórico Nacional -->
+				<div class="card-group">
+				<!-- Museo Histórico Nacional -->
 					<div class="card" style="padding: 10px;">
 						<div class="small-square-image">
 							<img class="card-img-top" src="imagens/museo_histórico_nacional.png" alt="Card image cap">
@@ -522,116 +556,116 @@
 							<div class="border-top my-3 custom-border"></div>
 							<p class="card-text">
 								O belíssimo Museu Histórico Nacional está localizado bem na Plaza de Armas, no centro de Santiago. 
-                        É um excelente lugar para passear pela história do Chile e seus costumes, onde poderão ver peças 
-                        dos povos originários como prataria Mapuche e da cultura Rapa Nui.
+						É um excelente lugar para passear pela história do Chile e seus costumes, onde poderão ver peças 
+						dos povos originários como prataria Mapuche e da cultura Rapa Nui.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-                        📍 Como chegar
-                     </a>
-                     <br>
-                     <span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
+					<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+						📍 Como chegar
+					</a>
+					<br>
+					<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
 						</div>
 					</div>
-               
-               <!-- Museo Nacional de História Natural do Chile -->
-					<div class="card" style="padding: 10px;">
-						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/museo_nacional_de_historia_natural_do_chile.png" alt="Card image cap">
+				
+				<!-- Museo Nacional de História Natural do Chile -->
+						<div class="card" style="padding: 10px;">
+							<div class="small-square-image">
+								<img class="card-img-top" src="imagens/museo_nacional_de_historia_natural_do_chile.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Museo Nacional de História Natural do Chile</h5>
+								<div class="border-top my-3 custom-border"></div>
+								<p class="card-text">
+									Foi fundado em 1830, é um dos museus mais antigos da América, está localizado no 
+							Parque Quinta Normal, é o museu mais visitado entre todos os museus do país.
+							No salão principal fica um enorme esqueleto de baleia e mamíferos embalsamados, 
+							já nas outras salas está a exposição “biogeográfico” com fotos, vídeos, mapas e 
+							cenários. Conta a história do universo passando por cada ecossistema de clima e 
+							vegetação do deserto até a patagônia.
+								</p>
+						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+							📍 Como chegar
+						</a>
+						<br>
+						<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
+							</div>
 						</div>
-						<div class="card-body">
-							<h5 class="card-title">Museo Nacional de História Natural do Chile</h5>
-							<div class="border-top my-3 custom-border"></div>
-							<p class="card-text">
-								Foi fundado em 1830, é um dos museus mais antigos da América, está localizado no 
-                        Parque Quinta Normal, é o museu mais visitado entre todos os museus do país.
-                        No salão principal fica um enorme esqueleto de baleia e mamíferos embalsamados, 
-                        já nas outras salas está a exposição “biogeográfico” com fotos, vídeos, mapas e 
-                        cenários. Conta a história do universo passando por cada ecossistema de clima e 
-                        vegetação do deserto até a patagônia.
-							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-                        📍 Como chegar
-                     </a>
-                     <br>
-                     <span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
+				
+				<!-- Museo de la Memoria y los Derechos Humanos -->
+						<div class="card" style="padding: 10px;">
+							<div class="small-square-image">
+								<img class="card-img-top" src="imagens/museo_de_la_memoria_y_los_derechos_humanos.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Museo de la Memoria y los Derechos Humanos</h5>
+								<div class="border-top my-3 custom-border"></div>
+								<p class="card-text">
+									Dedicado à memória daqueles que foram perseguidos, torturados e desparecidos durante
+							a ditadura militar do general Augusto Pinochet, assim como todas as pessoas que 
+							perderam a vida como vítimas das diversas ditaduras que assolaram América Latina e o 
+							mundo. Uma exposição absolutamente emocionante, pois conta com gravações em áudio, 
+							jornais revistas, fotografias e imagens de vídeo dos três golpes militares minuto a 
+							minuto e do período de repressão que se seguiu. Um passeio por este museu vai lhe 
+							ajudar a entender um pouco melhor a realidade chilena e o que significou para seu 
+							povo este difícil período.
+								</p>
+						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+							📍 Como chegar
+						</a>
+						<br>
+						<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
+							</div>
 						</div>
-					</div>
-               
-               <!-- Museo de la Memoria y los Derechos Humanos -->
-					<div class="card" style="padding: 10px;">
-						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/museo_de_la_memoria_y_los_derechos_humanos.png" alt="Card image cap">
+	
+				<!-- Museo Interactivo Mirador (MIM) -->
+						<div class="card" style="padding: 10px;">
+							<div class="small-square-image">
+								<img class="card-img-top" src="imagens/museo_interactivo_mirador_(MIM).png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Museo Interactivo Mirador (MIM)</h5>
+								<div class="border-top my-3 custom-border"></div>
+								<p class="card-text">
+									É o museu privado mais visitado de Chile, desde sua criação no ano 2000, um museu interativo dedicado à 
+							ciência, 70% dos seus visitantes são jovens e crianças, mas sem dúvida é uma visita divertida e educativa 
+							para todas as idades. Vale a pena dedicar umas 3 horas para viver a experiencia que este museu oferece, 
+							o maior atrativo é a casa sísmica, um simulador de terremoto, nele você poderá ter uma ideia de como 
+							foi o terremoto de 27 de fevereiro de 2010 no Chile.  Tem salas de eletromagnetismo e robótica para aprender 
+							conceito básicos da ciência.
+								</p>
+						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+							📍 Como chegar
+						</a>
+						<br>
+						<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
+							</div>
 						</div>
-						<div class="card-body">
-							<h5 class="card-title">Museo de la Memoria y los Derechos Humanos</h5>
-							<div class="border-top my-3 custom-border"></div>
-							<p class="card-text">
-								Dedicado à memória daqueles que foram perseguidos, torturados e desparecidos durante
-                        a ditadura militar do general Augusto Pinochet, assim como todas as pessoas que 
-                        perderam a vida como vítimas das diversas ditaduras que assolaram América Latina e o 
-                        mundo. Uma exposição absolutamente emocionante, pois conta com gravações em áudio, 
-                        jornais revistas, fotografias e imagens de vídeo dos três golpes militares minuto a 
-                        minuto e do período de repressão que se seguiu. Um passeio por este museu vai lhe 
-                        ajudar a entender um pouco melhor a realidade chilena e o que significou para seu 
-                        povo este difícil período.
-							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-                        📍 Como chegar
-                     </a>
-                     <br>
-                     <span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
-						</div>
-					</div>
-   
-               <!-- Museo Interactivo Mirador (MIM) -->
-					<div class="card" style="padding: 10px;">
-						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/museo_interactivo_mirador_(MIM).png" alt="Card image cap">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Museo Interactivo Mirador (MIM)</h5>
-							<div class="border-top my-3 custom-border"></div>
-							<p class="card-text">
-								É o museu privado mais visitado de Chile, desde sua criação no ano 2000, um museu interativo dedicado à 
-                        ciência, 70% dos seus visitantes são jovens e crianças, mas sem dúvida é uma visita divertida e educativa 
-                        para todas as idades. Vale a pena dedicar umas 3 horas para viver a experiencia que este museu oferece, 
-                        o maior atrativo é a casa sísmica, um simulador de terremoto, nele você poderá ter uma ideia de como 
-                        foi o terremoto de 27 de fevereiro de 2010 no Chile.  Tem salas de eletromagnetismo e robótica para aprender 
-                        conceito básicos da ciência.
-							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-                        📍 Como chegar
-                     </a>
-                     <br>
-                     <span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
-						</div>
-					</div>
 
-               <!-- Museo Nacional de Bellas Artes -->
-					<div class="card" style="padding: 10px;">
-						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/museo_de_la_memoria_y_los_derechos_humanos.png" alt="Card image cap">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Museo Nacional de Bellas Artes</h5>
-							<div class="border-top my-3 custom-border"></div>
-							<p class="card-text">
-								Criado em 1880 com o nome de Museu Nacional da Pintura, pois só existiam pinturas, 
-                        a coleção foi crescendo com o tempo e o local onde hoje é o Museu Nacional de Bellas Artes começou 
-                        a ser construído em 1901, ficando pronto em 1910 comemorando os 100 anos do Chile.
-                        Hoje existem mais de 5 mil obras, como estatuas de mármore, escultura, desenho e pinturas de artistas 
-                        chilenos e internacionais, que vão desde os tempos coloniais até nossos dias. Algo a destacar no salão 
-                        principal é o teto de vidro feito na Bélgica.
-							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-                        📍 Como chegar
-                     </a>
-                     <br>
-                     <span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
+				<!-- Museo Nacional de Bellas Artes -->
+						<div class="card" style="padding: 10px;">
+							<div class="small-square-image">
+								<img class="card-img-top" src="imagens/museo_de_la_memoria_y_los_derechos_humanos.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Museo Nacional de Bellas Artes</h5>
+								<div class="border-top my-3 custom-border"></div>
+								<p class="card-text">
+									Criado em 1880 com o nome de Museu Nacional da Pintura, pois só existiam pinturas, 
+							a coleção foi crescendo com o tempo e o local onde hoje é o Museu Nacional de Bellas Artes começou 
+							a ser construído em 1901, ficando pronto em 1910 comemorando os 100 anos do Chile.
+							Hoje existem mais de 5 mil obras, como estatuas de mármore, escultura, desenho e pinturas de artistas 
+							chilenos e internacionais, que vão desde os tempos coloniais até nossos dias. Algo a destacar no salão 
+							principal é o teto de vidro feito na Bélgica.
+								</p>
+						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+							📍 Como chegar
+						</a>
+						<br>
+						<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
 
 			<!-- Aplicativos e ferramentas -->
@@ -643,34 +677,46 @@
 						Para facilitar a sua viagem
 					</p>
 				</div>
-				<!-- Container -->
-				<div class="container mt-4">
-					<div class="row row-cols-1 row-cols-md-3 g-4">
-						<!-- Chip telefônico -->
-						<div class="col">
-							<div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
-								<img src="https://play-lh.googleusercontent.com/S8Vpq8o0W1CNMU7LqF_SNkt8guhQhtOBpqrhmsNjrHerrHcalqjUJdHhrS77FbrrDA=w480-h960-rw" class="card-img-top" alt="Cartão de transporte" style="width: 40%;max-height: 40%;padding: 5%;">
-								<div class="card-body">
-									<h5 class="card-title">Fique conectado</h5>
-									<p class="card-text">
-										O ideal é adquirir um Chip Internacional ainda no Brasil, para que já chegue ativado e pronto para uso. Recomendamos o <strong>Nomad</strong>, que é um Chip Virtual e pode ser adquirido através do aplicativo Nomad.
-									</p>
-									<a href="https://play.google.com/store/apps/details?id=com.nomad.app" target="_blank" class="btn btn-primary d-block mx-auto">Baixar App</a>
-								</div>
-							</div>
+				
+				<!-- Cards -->
+				<div class="card-group">
+					
+					<!-- Chip telefônico -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="https://play-lh.googleusercontent.com/S8Vpq8o0W1CNMU7LqF_SNkt8guhQhtOBpqrhmsNjrHerrHcalqjUJdHhrS77FbrrDA=w480-h960-rw" class="card-img-top">
 						</div>
-						<!-- Cartão Wise -->
-						<div class="col">
-							<div class="card h-100" style="display: flex;direction: row;flex-direction: column;align-items: center;">
-								<img src="imagens/cartao_wise.jpg" class="card-img-top" alt="Cartão Wise" style="width: 40%;max-height: 40%;padding: 5%;">
-								<div class="card-body">
-									<h5 class="card-title">Cartão Wise</h5>
-									<p class="card-text">
-										Uma opção internacional que permite converter e gastar dinheiro em diversas moedas com tarifas mais baixas que os bancos tradicionais. Com ele, você pode carregar o saldo pelo app, acompanhar os gastos em tempo real e utilizar tanto no transporte quanto em compras no exterior, tudo de forma segura e econômica.
-									</p>
-									<a href="https://apps.apple.com/br/app/wise/id123456789" target="_blank" class="btn btn-primary d-block mx-auto">Baixar App</a>
-								</div>
+						<div class="card-body">
+							<div style="height: 90%;">
+								<h5 class="card-title">Fique conectado</h5>
+								<div class="border-top my-3 custom-border"></div>
+								<p class="card-text">
+									O ideal é adquirir um Chip Internacional ainda no Brasil, para que já chegue ativado 
+									e pronto para uso. Recomendamos o <strong>Nomad</strong>, que é um Chip Virtual e 
+									pode ser adquirido através do aplicativo Nomad.
+								</p>
 							</div>
+							<a href="https://play.google.com/store/apps/details?id=com.nomad.app" target="_blank" class="btn btn-primary d-block mx-auto" style="background-color: rgb(219, 71, 30); color: #ffffff; border: 0;">Baixar App</a>
+						</div>
+					</div>
+
+					<!-- Cartão Wise -->
+					<div class="card" style="padding: 10px;">
+						<div class="small-square-image">
+							<img class="card-img-top" src="imagens/cartao_wise.jpg" class="card-img-top">
+						</div>
+						<div class="card-body">
+							<div style="height: 90%;">
+								<h5 class="card-title">Fique conectado</h5>
+								<div class="border-top my-3 custom-border"></div>
+								<p class="card-text">
+									Uma opção internacional que permite converter e gastar dinheiro em diversas moedas 
+									com tarifas mais baixas que os bancos tradicionais. Com ele, você pode carregar o 
+									saldo pelo app, acompanhar os gastos em tempo real e utilizar tanto no transporte 
+									quanto em compras no exterior, tudo de forma segura e econômica.
+								</p>
+							</div>
+							<a href="https://apps.apple.com/br/app/wise/id123456789" target="_blank" class="btn btn-primary d-block mx-auto" style="background-color: rgb(219, 71, 30); color: #ffffff; border: 0;">Baixar App</a>
 						</div>
 					</div>
 				</div>
