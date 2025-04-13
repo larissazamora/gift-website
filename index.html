@@ -18,8 +18,8 @@
             overflow-x: hidden;
 			}
 			.container-body {
-            background-color: rgb(219, 71, 30);
-            color: #ffffff;
+			background-color: #833628;
+            color: hsl(206.67deg 7.96% 77.84%);
 			}
 			.header-overlay {
             position: relative;
@@ -33,7 +33,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            color: #ffffff;
+            color: hsl(206.67deg 7.96% 77.84%);
             padding: 20px;
             box-sizing: border-box; /* Ensure padding doesn't affect layout */
 			}
@@ -43,8 +43,7 @@
             background-size: cover;
             background-position: center;
             padding-top: 17%;
-            padding-bottom: 17%;
-            color: #ffffff;
+            padding-bottom: 17%;;
 			}
 			.header-content {
             z-index: 2;
@@ -57,34 +56,32 @@
             color: white;
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             margin-bottom: 20px;
 			}
 			.header-content p {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
             line-height: 1.7;
-            color: rgba(255, 255, 255, 0.9);
+            color: white;
             margin-bottom: 20px;
 			}
 			.cta-button-homepage {
             font-family: 'Montserrat', sans-serif;
             font-size: 20px;
             font-weight: bold;
-            color: #FFD700;
             text-decoration: none;
             padding: 10px 20px;
             border-radius: 5px;
-            background-color: rgb(159, 79, 57);
+            background-color: #833628;
             border: none;
             transition: all 0.3s ease;
 			}
 			.cta-button-homepage:hover {
-            background-color: rgba(142, 86, 22, 0.8);
-            color: #ffffff;
+				background-color: hsl(206.67deg 7.96% 77.84%);
+				color: #833628;
 			}
 			.text-container-homepage {
-			   background: rgba(87, 48, 7, 0.5); /* Preto com 50% de opacidade */
+			   background: rgba(132, 53, 40, 0.5); /* Preto com 50% de opacidade */
 			}
 			.background-image .content {
             position: relative;
@@ -95,7 +92,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #ffffff;
+            color: hsl(206.67deg 7.96% 77.84%);
             padding: 20px;
             box-sizing: border-box;
 			}
@@ -135,11 +132,11 @@
             font-size: 1.25rem; /* Define o tamanho da fonte para ser igual ao texto da linha 101 */
 			}
 			.custom-border {
-   			border-color: rgb(219, 71, 30) !important; /* Define a cor laranja */
+   			border-color: rgb(243, 240, 239) !important; /* Define a cor laranja */
 			}
 			.btn:hover {
             background-color: rgba(255, 255, 255, 0.8); /* Cor mais clara no hover */
-            color: rgb(255, 166, 107); /* Texto laranja no hover */
+            color: hsl(206.67deg 7.96% 77.84%); /* Texto laranja no hover */
             transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 			}
 			.card-group {
@@ -156,11 +153,25 @@
 				padding-left: 8%;
 				padding-right: 8%;
 				max-width: 40%;
+				background-color: #833628;
+				color: hsl(206.67deg 7.96% 77.84%);
+				border: 0;
+			}
+
+			a {
+				color: hsl(206.67deg 7.96% 77.84%);
+				background-color: #833628;
 			}
 
 			.card-group>.card+.card {
 				margin-left: 17px;
 				border-left: 0;
+			}
+
+			.section-title {
+				text-align: center;
+				background: hsl(206.67deg 7.96% 77.84%);
+			   	color: #833628; /* Preto com 50% de opacidade */
 			}
 
 			/* Celular */
@@ -209,7 +220,7 @@
 					fazendo cada pôr do sol ser um espetáculo à parte, com paisagens que parecem a entrada de um sonho. Já conseguem imaginar? 
 					Ainda não? Então aqui vai mais um dica: Que tal brindar o amor de vocês com um bom vinho local?
 				</p>
-				<button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage cta-button-homepage" style="background-color: rgb(219, 71, 30); color: #ffffff;" onclick="showInfo()">Clique para ver o destino</button>
+				<button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage cta-button-homepage" style="background-color: #833628; color:white" onclick="showInfo()">Clique para ver o destino</button>
 			</div>
 		</header>
 
@@ -240,17 +251,17 @@
 					</p>
 					<a href="https://www.gov.br/pt-br/servicos/obter-passaporte-comum-para-brasileiro" target="_blank" 
 						class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage" 
-						style="background-color: rgb(219, 71, 30); color: #ffffff; width: auto; padding: 10px 20px; text-align: center;">
+						style="color: #ffffff; width: auto; padding: 10px 20px; text-align: center;">
 					Clique e siga as instruções
 					</a>
 				</div>
 			</div>
 
 			<!-- Passeios reservados -->
-			<div id="containerDetalhes" class="container-detalhes">
+			<div id="containerDetalhes">
 				<!-- Título -->
 				<div>
-					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: -2%;">
+					<p class="small-font text-container-homepage section-title" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: -2%;">
 						<strong>Passeios que Reservamos</strong><br>
 						Para aproveitarem o destino
 					</p>
@@ -302,7 +313,7 @@
 			<div>
 				<!-- Título -->
 				<div>
-					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+					<p class="small-font text-container-homepage section-title" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
 						<strong>Recomendações Extras</strong><br>
 						Para explorar a cidade
 					</p>
@@ -323,9 +334,10 @@
                         que vão ao Chile. Você pode visitá-lo a qualquer momento do dia. Seja para almoçar, jantar, ou fazer compras. 
                         Ótimo para experimentar a vida noturna em Santiago.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-                        📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
 						</div>
@@ -345,9 +357,10 @@
                         A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura 
                         moderna de Santiago, além de um pôr do sol inesquecível.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/s6zWpS7GdVLetYJQ8" target="_blank">
-                        📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/s6zWpS7GdVLetYJQ8" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 Todos os dias das 10h às 22h. </span>
 						</div>
@@ -366,9 +379,10 @@
 								O Giratorio é um restaurante localizado no topo do Sky Costanera no bairro 
                         Providencia, um dos bairros mais bonitos de Santiago, mais especificamente na Av. Nueva Providencia, 2250.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/7hRV9E1zc2wfmMNa7" target="_blank">
-                        📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/7hRV9E1zc2wfmMNa7" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 Sexta e Sábado: 13h às 21:30 Domingo: 13h às 15:30 Segunda a Quinta: 13h às 21h. </span>
 						</div>
@@ -387,9 +401,10 @@
 								O Bairro Paris-Londres é um bairro turístico no centro histórico de Santiago, Chile. 
                         O bairro é conhecido pelo seu estilo arquitetônico europeu e pelas suas ruas estreitas e sinuosas.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/Soo1qD9PmjRDdapN9" target="_blank">
-                        📍 Como chegar
+					📍 <a class="link-offset-1" href="https://maps.app.goo.gl/Soo1qD9PmjRDdapN9" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 Qualquer horário. </span>
 						</div>
@@ -408,9 +423,10 @@
 								Fundada por  Pedro de Valdivia em 1541, originalmente tinha como função ser um campo de treinamento militar 
                         e centro estratégico do assentamento espanhol para sua expansão e conquista.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/kJaJ6eHE7tkCLFS59" target="_blank">
-                        📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/kJaJ6eHE7tkCLFS59" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 Qualquer horário. </span>
 						</div>
@@ -430,9 +446,10 @@
                         neoclássico com influencias do dórico romano que vale a pena conhecer, ela se encontra nas 
                         ruas Morande com Huérfanos. 
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/hG4V9RtzYvXSyB2W6" target="_blank">
-                        📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/hG4V9RtzYvXSyB2W6" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 Segunda a quinta: 15h e 16:30 Sexta 15h. </span>
 						</div>
@@ -452,9 +469,10 @@
                         e oferece umas das melhores vistas de 360 graus da cidade, O cerro tem sido parte dos acontecimentos 
                         mais importantes de Santiago desde seu nascimento oficial e inclusive desde muito antes.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/rzpH4L5aRc7wogwM6" target="_blank">
-                        📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/rzpH4L5aRc7wogwM6" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 De Terça a Domingo das 09h às 19h</span>
 						</div>
@@ -476,9 +494,10 @@
                         centro comercial, onde pode comprar camiseta, artesanato e presentes típicos. Para subir e descer também 
                         pode usar o funicular ou o teleférico.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/opMNXE39EwX3Mab29" target="_blank">
-                        📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/opMNXE39EwX3Mab29" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 Terça a Domingo das 10h às 19h45. </span>
 						</div>
@@ -500,9 +519,10 @@
                         e poetas, na atualidade a colorida rua abriga importantes prédios históricos e entidades financeiras do pais 
                         como a Bolsa de comercio de Santiago e Museu de Arte Precolombino.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/pMjnbqXTiAGMEBxw6" target="_blank">
-                        📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/pMjnbqXTiAGMEBxw6" target="_blank">
+                        Como chegar
                      </a>
+                     <br>
                      <br>
                      <span>🕘 Qualquer horário. </span>
 						</div>
@@ -525,11 +545,11 @@
                         Uma das maiores atrações é a adorável lagoa do norte, o acesso à Isabel Montt Street. Esse habitat coexiste 
                         harmoniosamente os cisnes em preto, Taguas, garças e trilhas, fornecendo um show natural que encanta os visitantes.
 							</p>
-                     <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="hhttps://maps.app.goo.gl/jGjkBy2MHm3W3EEP6" target="_blank">
-                        📍 Como chegar
+                     <a class="link-offset-1" href="hhttps://maps.app.goo.gl/jGjkBy2MHm3W3EEP6" target="_blank">
+                        Como chegar
                      </a>
                      <br>
-                     <span>🕘 Todos os dias das 08h às 23h. </span>
+                     📍 <span>🕘 Todos os dias das 08h às 23h. </span>
 						</div>
 					</div>
 				</div>
@@ -539,7 +559,7 @@
 			<div>
 				<!-- Título -->
 				<div>
-					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+					<p class="small-font text-container-homepage section-title" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
 						<strong>Alguns Museus</strong><br>
 						Para quem curte arte, história e cultura
 					</p>
@@ -559,9 +579,10 @@
 						É um excelente lugar para passear pela história do Chile e seus costumes, onde poderão ver peças 
 						dos povos originários como prataria Mapuche e da cultura Rapa Nui.
 							</p>
-					<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-						📍 Como chegar
+							📍 <a class="link-offset-1" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+						Como chegar
 					</a>
+					<br>
 					<br>
 					<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
 						</div>
@@ -583,9 +604,10 @@
 							cenários. Conta a história do universo passando por cada ecossistema de clima e 
 							vegetação do deserto até a patagônia.
 								</p>
-						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-							📍 Como chegar
+								📍 <a class="link-offset-1" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+							Como chegar
 						</a>
+						<br>
 						<br>
 						<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
 							</div>
@@ -609,9 +631,10 @@
 							ajudar a entender um pouco melhor a realidade chilena e o que significou para seu 
 							povo este difícil período.
 								</p>
-						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-							📍 Como chegar
+								📍 <a class="link-offset-1" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+							Como chegar
 						</a>
+						<br>
 						<br>
 						<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
 							</div>
@@ -633,9 +656,10 @@
 							foi o terremoto de 27 de fevereiro de 2010 no Chile.  Tem salas de eletromagnetismo e robótica para aprender 
 							conceito básicos da ciência.
 								</p>
-						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-							📍 Como chegar
+								📍 <a class="link-offset-1" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+							Como chegar
 						</a>
+						<br>
 						<br>
 						<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
 							</div>
@@ -657,9 +681,10 @@
 							chilenos e internacionais, que vão desde os tempos coloniais até nossos dias. Algo a destacar no salão 
 							principal é o teto de vidro feito na Bélgica.
 								</p>
-						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-							📍 Como chegar
+								📍 <a class="link-offset-1" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+							Como chegar
 						</a>
+						<br>
 						<br>
 						<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
 							</div>
@@ -672,7 +697,7 @@
 			<div>
 				<!-- Título -->
 				<div>
-					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+					<p class="small-font text-container-homepage section-title" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
 						<strong>Aplicativos e Ferramentas</strong><br>
 						Para facilitar a sua viagem
 					</p>
@@ -684,7 +709,7 @@
 					<!-- Chip telefônico -->
 					<div class="card" style="padding: 10px;">
 						<div class="small-square-image">
-							<img class="card-img-top" src="https://play-lh.googleusercontent.com/S8Vpq8o0W1CNMU7LqF_SNkt8guhQhtOBpqrhmsNjrHerrHcalqjUJdHhrS77FbrrDA=w480-h960-rw" class="card-img-top">
+							<img class="card-img-top" src="./imagens/nomad.webp" class="card-img-top">
 						</div>
 						<div class="card-body">
 							<div style="height: 90%;">
@@ -696,7 +721,7 @@
 									pode ser adquirido através do aplicativo Nomad.
 								</p>
 							</div>
-							<a href="https://play.google.com/store/apps/details?id=com.nomad.app" target="_blank" class="btn btn-primary d-block mx-auto" style="background-color: rgb(219, 71, 30); color: #ffffff; border: 0;">Baixar App</a>
+							<a href="https://play.google.com/store/apps/details?id=com.nomad.app" target="_blank" class="btn d-block mx-auto" style="background-color: hsl(206.67deg 7.96% 77.84%); color: #833628; border: 0;"><strong>Baixar App</strong></a>
 						</div>
 					</div>
 
@@ -716,7 +741,7 @@
 									quanto em compras no exterior, tudo de forma segura e econômica.
 								</p>
 							</div>
-							<a href="https://apps.apple.com/br/app/wise/id123456789" target="_blank" class="btn btn-primary d-block mx-auto" style="background-color: rgb(219, 71, 30); color: #ffffff; border: 0;">Baixar App</a>
+							<a href="https://apps.apple.com/br/app/wise/id123456789" target="_blank" class="btn d-block mx-auto" style="background-color: hsl(206.67deg 7.96% 77.84%); color: #833628; border: 0;"><strong>Baixar App</strong></a>
 						</div>
 					</div>
 				</div>
@@ -726,7 +751,7 @@
 			<div>
 				<!-- Título -->
 				<div>
-					<p class="small-font text-container-homepage" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+					<p class="small-font text-container-homepage section-title" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
 						<strong>Aos Noivos</strong><br>
 						Uma mensagem especial
 					</p>
@@ -794,11 +819,11 @@
 							<div class="carousel-inner">
 								<!-- Foto 1 -->
 								<div class="carousel-item active">
-									<img src="imagens/foto_any.jpg" class="d-block w-100 img-fluid rounded" alt="Foto 1">
+									<img src="imagens/foto_any.jpg" class="d-block w-100 img-fluid rounded">
 								</div>
 								<!-- Foto 2 -->
 								<div class="carousel-item">
-									<img src="imagens/foto_lari_joao.jpg" class="d-block w-100 img-fluid rounded" alt="Foto 2">
+									<img src="imagens/foto_lari_joao.jpg" class="d-block w-100 img-fluid rounded">
 								</div>
 							</div>
 
@@ -818,7 +843,7 @@
 		</div>
 
 		<!-- Rodapé -->
-		<footer id="footer" class="bg-dark text-white text-center py-4 mt-5" style="display: none;">
+		<footer id="footer" class="bg-dark text-white text-center py-4" style="display: none; margin-top: 0;">
 			<div class="container">
 				<p class="mb-2" style="font-family: 'Montserrat', sans-serif; font-size: 1rem;">
 					Que o amor seja sempre o maior destino.
