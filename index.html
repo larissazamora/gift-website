@@ -12,14 +12,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 		<style>
 			body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow-x: hidden;
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				overflow-x: hidden;
+				background-color: #833628;
 			}
 			.container-body {
-			background-color: #833628;
-            color: hsl(206.67deg 7.96% 77.84%);
+				background-color: #833628;
+				color: hsl(206.67deg 7.96% 77.84%);
 			}
 			.header-overlay {
 				position: relative;
@@ -53,21 +54,6 @@
 				height: 100vh;
 			}
 
-			/* .header-content h1 {
-				font-family: 'Bebas Neue', sans-serif;
-				font-size: 60px;
-				color: white;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-				margin-bottom: 20px;
-			} */
-			/* .header-content p {
-				font-family: 'Montserrat', sans-serif;
-				font-size: 18px;
-				line-height: 1.7;
-				color: white;
-				margin-bottom: 20px;
-			} */
 			.cta-button-homepage {
 				font-family: 'Montserrat', sans-serif;
 				font-size: 20px;
@@ -377,59 +363,63 @@
 
 		<!-- Conteúdo principal -->
 		<div class="container-body" style="display: none;">
+			<div>
+				<!-- Título -->
+				<div class="section-title" style="margin-top: 0">
+					<p class="small-font text-container-homepage section-title" style="padding-top: 10px; padding-bottom: 10px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+						<strong>DESTINO</strong><br>
+						Cidade de Santiago no Chile
+					</p>
+				</div>
 
-			<!-- Destino -->
-			<div class="card mb-4" style="background-color: #833628; color: hsl(206.67deg 7.96% 77.84%); border: none; padding: 20px;">
+            <div class="card-group" >
+					<div class="card">
+						<div class="small-square-image">
+							<img  src="imagens/destino.jpg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<div class="card-body">
+								<p class="card-text">
+									Vocês irão embarcar para <strong>Santiago, Chile</strong>.
+									Aproveitem essa oportunidade para explorarem novos lugares e criarem
+									ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de 
+									experiências compartilhadas, e nada melhor que uma viagem para celebrar e
+									criar uma lembrança eterna desse momento tão importante na vida de vocês.
+								</p>
+								<p class="card-text">
+									Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes,
+									saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam
+									ainda mais os laços que os unem. Vocês merecem!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Instruções para passaporte -->
+				<div class="card mb-4" style="background-color: #833628; color: hsl(206.67deg 7.96% 77.84%); border: none; padding: 20px;">
 				<div class="row g-0 align-items-center">
 					<!-- Imagem -->
-					<div class="col-md-4">
-						<img src="imagens/destino.jpg" class="img-fluid rounded-start" alt="Imagem do destino">
+					<div class="col-md-4 d-flex justify-content-center">
+						<img src="imagens/passaporte.png" class="img-fluid rounded" alt="Imagem do passaporte" style="max-width: 100%; height: auto;">
 					</div>
 					<!-- Texto -->
 					<div class="col-md-8">
 						<div class="card-body">
-							<h5 class="card-title">DESTINO</h5>
+							<h5 class="card-title">PASSAPORTES</h5>
 							<p class="card-text">
-								Vocês irão embarcar para <strong>Santiago, Chile</strong>.
-								Aproveitem essa oportunidade para explorarem novos lugares e criarem
-								ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de 
-								experiências compartilhadas, e nada melhor que uma viagem para celebrar e
-								criar uma lembrança eterna desse momento tão importante na vida de vocês.
+								Agora que o destino foi revelado, é hora de se prepararem. Antes de fazerem as malas, 
+								precisam fazer os passaportes para darmos continuidade nessa aventura. O procedimento 
+								é feito pelo site da Polícia Federal e envolve o agendamento de um atendimento presencial. Corram!
 							</p>
-							<p class="card-text">
-								Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes,
-								saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam
-								ainda mais os laços que os unem. Vocês merecem!
-							</p>
+							<!-- Botão -->
+							<a href="https://www.gov.br/pt-br/servicos/obter-passaporte-comum-para-brasileiro" target="_blank" class="btn d-block mx-auto" style="background-color: hsl(206.67deg 7.96% 77.84%); color: #833628; border: 0;">
+								<strong>Clique e siga as instruções</strong>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<!-- Instruções para passaporte -->
-			<div class="card mb-4" style="background-color: #833628; color: hsl(206.67deg 7.96% 77.84%); border: none; padding: 20px;">
-    <div class="row g-0 align-items-center">
-        <!-- Imagem -->
-        <div class="col-md-4 d-flex justify-content-center">
-            <img src="imagens/passaporte.png" class="img-fluid rounded" alt="Imagem do passaporte" style="max-width: 100%; height: auto;">
-        </div>
-        <!-- Texto -->
-        <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">PASSAPORTES</h5>
-                <p class="card-text">
-                    Agora que o destino foi revelado, é hora de se prepararem. Antes de fazerem as malas, 
-                    precisam fazer os passaportes para darmos continuidade nessa aventura. O procedimento 
-                    é feito pelo site da Polícia Federal e envolve o agendamento de um atendimento presencial. Corram!
-                </p>
-                <!-- Botão -->
-				<a href="https://www.gov.br/pt-br/servicos/obter-passaporte-comum-para-brasileiro" target="_blank" class="btn d-block mx-auto" style="background-color: hsl(206.67deg 7.96% 77.84%); color: #833628; border: 0;">
-					<strong>Clique e siga as instruções</strong>
-				</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 			<!-- Passeios reservados -->
 			<div id="containerDetalhes">
