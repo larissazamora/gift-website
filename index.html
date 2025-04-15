@@ -22,59 +22,62 @@
             color: hsl(206.67deg 7.96% 77.84%);
 			}
 			.header-overlay {
-            position: relative;
-            width: 100%;
-            height: 100vh; /* Full viewport height */
-            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('imagens/header_noivos.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: hsl(206.67deg 7.96% 77.84%);
-            padding: 20px;
-            box-sizing: border-box; /* Ensure padding doesn't affect layout */
+				position: relative;
+				width: 100%;
+				height: 100vh; /* Full viewport height */
+				background-size: cover;
+				background-position: center;
+				background-color: #833628;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				color: hsl(206.67deg 7.96% 77.84%);
+				padding: 20px;
+				box-sizing: border-box; /* Ensure padding doesn't affect layout */
 			}
+
 			.background-image {
-            position: relative;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('imagens/destino.jpg');
-            background-size: cover;
-            background-position: center;
-            padding-top: 17%;
-            padding-bottom: 17%;;
+				position: relative;
+				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('imagens/destino.jpg');
+				background-size: cover;
+				background-position: center;
+				padding-top: 17%;
+				padding-bottom: 17%;;
 			}
+
 			.header-content {
-            z-index: 2;
-            max-width: 100%; /* Adjust width for smaller screens */
-            height: 100vh;
+				z-index: 2;
+				max-width: 100%; /* Adjust width for smaller screens */
+				height: 100vh;
 			}
-			.header-content h1 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 60px;
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-			}
-			.header-content p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            line-height: 1.7;
-            color: white;
-            margin-bottom: 20px;
-			}
+
+			/* .header-content h1 {
+				font-family: 'Bebas Neue', sans-serif;
+				font-size: 60px;
+				color: white;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				margin-bottom: 20px;
+			} */
+			/* .header-content p {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 18px;
+				line-height: 1.7;
+				color: white;
+				margin-bottom: 20px;
+			} */
 			.cta-button-homepage {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #833628;
-            border: none;
-            transition: all 0.3s ease;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 20px;
+				font-weight: bold;
+				text-decoration: none;
+				padding: 10px 20px;
+				border-radius: 5px;
+				background-color: #833628;
+				border: none;
+				transition: all 0.3s ease;
 			}
 			.cta-button-homepage:hover {
 				background-color: hsl(206.67deg 7.96% 77.84%);
@@ -84,17 +87,17 @@
 			   background: rgba(132, 53, 40, 0.5); /* Preto com 50% de opacidade */
 			}
 			.background-image .content {
-            position: relative;
-            z-index: 2;
-            text-align: center; /* Centraliza o texto */
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: hsl(206.67deg 7.96% 77.84%);
-            padding: 20px;
-            box-sizing: border-box;
+				position: relative;
+				z-index: 2;
+				text-align: center; /* Centraliza o texto */
+				background-size: cover;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				color: hsl(206.67deg 7.96% 77.84%);
+				padding: 20px;
+				box-sizing: border-box;
 			}
 			.background-image .content p {
 			   font-size: 1.25rem; /* Aumenta o tamanho da fonte do texto */
@@ -197,6 +200,13 @@
 				margin-bottom: 5px;
 			}
 
+			.img-header {
+				width: 100%;
+				height: 234px;
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: cover;
+			}
 			
 			@media (min-width: 768px) {
 				.card-body {
@@ -230,20 +240,75 @@
 					padding-right: 8%;
 				}
 				.header-content h1 {
-				font-size: 36px; /* Reduce font size for smaller screens */
-				margin-bottom: 10px;
+					font-size: 26px;
+					margin-bottom: 10px;
+					text-align: start;
+					padding-left: 20px;
+					display: block;
+					flex-direction: row;
+					align-items: normal;
+					justify-content: normal;
+					width: 360px;
+					height: 33.6094px;
+					margin: 0px;
+					font-family: minerva-modern;
+					font-size: 24.004px;
+					font-weight: 400;
+					color: hsl(206.67deg 7.96% 77.84%);
 				}
-				.header-content p {
-				font-size: 14px; /* Reduce font size for smaller screens */
-				line-height: 1.5;
-				margin-bottom: 15px;
+
+				.header-content h4 {
+					display: block;
+					margin: 0px 0px 32px 0px (top, right, bottom, left);
+					padding: 0px;
+					font-family: minerva-modern;
+					font-size: 17.6008px;
+					font-weight: 400;
+					line-height: 24.444px;
+					color: hsl(206.67deg 7.96% 77.84%);
+					text-align: center;
 				}
+
+				.header-content-introduction {
+					display: block;
+					margin: 16px 0px 16px 0px (top, right, bottom, left);
+					padding: 0px;
+					padding-top: 15px;
+					font-family: freight-text-pro;
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 25.6px;
+					color: hsl(206.67deg 7.96% 77.84%);
+					text-align: center;
+					line-height: 1.4;
+					margin-bottom: 15px;
+				}
+
+				.header-content-subtitle {
+					display: block;
+					margin: 16px 0px 16px 0px (top, right, bottom, left);
+					padding: 0px;
+					font-family: freight-text-pro;
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 25.6px;
+					color: hsl(206.67deg 7.96% 77.84%);
+					text-align: center;
+				}
+
+				/* .header-content p {
+					font-size: 12px;
+					line-height: 1.4;
+					margin-bottom: 15px;
+				} */
+
 				.cta-button-homepage {
-				font-size: 16px; /* Reduce button font size */
-				padding: 8px 16px; /* Adjust button padding */
+					font-size: 16px; /* Reduce button font size */
+					padding: 8px 16px; /* Adjust button padding */
 				}
 				.header-overlay {
-				padding: 10px; /* Add padding for smaller screens */
+					padding-left: 0;
+        			padding-right: 0;
 				}
 				
 				.card-group>.card {
@@ -258,6 +323,19 @@
 				.card-group>.card>.card-body>.card-body-info {
 					margin-top: 15px;
 				}
+
+				.home-page-image {
+					display: grid;
+					width: 375px;
+					height: 234px;
+					overflow: visible;
+					position: relative;
+					top: 0px;
+					right: 0px;
+					bottom: 0px;
+					left: 0px;
+					z-index: auto;
+				}	
 			}
 		</style>
 	</head>
@@ -268,15 +346,32 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: center;">
-				<h1 >Alysson e Juliana</h1>
-				<p class=" text-container-homepage" style="padding-top: 30px; padding-bottom: 30px">
-					Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, 
-					decidimos oferecer um presente único e inesquecível. Que tal uma aventura que os leve a um lugar de extremos,
-					com uma beleza quase irreal e com lugares que não se explicam, se sentem. Onde montanhas tocam o céu e a natureza se revela,
-					fazendo cada pôr do sol ser um espetáculo à parte, com paisagens que parecem a entrada de um sonho. Já conseguem imaginar? 
-					Ainda não? Então aqui vai mais um dica: Que tal brindar o amor de vocês com um bom vinho local?
-				</p>
-				<button type="button" class="btn btn-sm mx-auto d-block mt-3 py-3 fw-bold cta-button-homepage cta-button-homepage" style="background-color: #833628; color:white" onclick="showInfo()">Clique para ver o destino</button>
+				<div>
+					<h1>ALYSSON E JULIANA</h1>
+				</div>
+				<br>
+				<div>
+					<p class="header-content-subtitle">O GUIA DE VOCÊS PARA UMA VIAGEM QUE PROMETE SER INESQUECÍVEL</p>
+				</div>
+				<div class="home-page-image">
+					<img src="imagens/home-page.jpeg" class="img-header">
+				</div>
+				<div>
+					<p class="header-content-introduction">
+						<!-- Pensando em algo que pudesse representar toda felicidade que sentimos por vocês, 
+						decidimos oferecer um presente único e inesquecível. Que tal uma aventura que os leve a um lugar de extremos,
+						com uma beleza quase irreal e com lugares que não se explicam, se sentem. Onde montanhas tocam o céu e a natureza se revela,
+						fazendo cada pôr do sol ser um espetáculo à parte, com paisagens que parecem a entrada de um sonho. Já conseguem imaginar? 
+						Ainda não? Então aqui vai mais um dica: Que tal brindar o amor de vocês com um bom vinho local? -->
+						Que tal uma aventura que os leve a um lugar de extremos,
+						com uma beleza quase irreal e com lugares que não se explicam, se sentem. Onde montanhas tocam o céu e a natureza se revela,
+						fazendo cada pôr do sol ser um espetáculo à parte, com paisagens que parecem a entrada de um sonho. Já conseguem imaginar? 
+						Ainda não? Então aqui vai mais um dica: Que tal brindar o amor de vocês com um bom vinho local?
+					</p>
+				</div>
+				<a class="link-offset-1" style="color: hsl(206.67deg 7.96% 77.84%); border: 0;" onclick="showInfo()">
+					<strong>Clique para ver o destino</strong>
+				</a>
 			</div>
 		</header>
 
@@ -351,7 +446,7 @@
 					<!-- Termas de Colina -->
 					<div class="card" >
 						<div class="small-square-image">
-							<img class="card-img-top" src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg">
+							<img  src="https://chiletravel.com.br/wp-content/uploads/2023/05/TERMAS_COLINA_CLIENTE_FOTO_5.jpeg">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text-passeio">
@@ -383,7 +478,7 @@
 					<!-- Valle Nevado -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/valle_nevado.webp">
+							<img  src="imagens/valle_nevado.webp">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text-passeio">
@@ -428,7 +523,7 @@
 					<!-- Pátio Bellavista -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/patio_bella_vista.jpg" alt="Card image cap">
+							<img  src="imagens/patio_bella_vista.jpg" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -457,7 +552,7 @@
                <!-- Sky Costanera -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/sky_costanera.jpg" alt="Card image cap">
+							<img  src="imagens/sky_costanera.jpg" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -486,7 +581,7 @@
 					<!-- Restaurante Giratório -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/restaurante_giratorio.png" alt="Card image cap">
+							<img  src="imagens/restaurante_giratorio.png" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -514,7 +609,7 @@
 					<!-- Bairro Paris Londres -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/bairro_paris_londres.jpg" alt="Card image cap">
+							<img  src="imagens/bairro_paris_londres.jpg" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -543,7 +638,7 @@
 					<!-- Plaza de Armas -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/plaza_armas.png" alt="Card image cap">
+							<img  src="imagens/plaza_armas.png" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -571,7 +666,7 @@
 					<!-- Palacio de la Moneda -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/palacio_de_las_monedas.png" alt="Card image cap">
+							<img  src="imagens/palacio_de_las_monedas.png" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -607,7 +702,7 @@
 					<!-- Cerro Santa Lucia -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/cerro_santa_lucia.png" alt="Card image cap">
+							<img  src="imagens/cerro_santa_lucia.png" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -636,7 +731,7 @@
 					<!-- Cerro San Cristóbal -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/cerro_san_cristobal.png" alt="Card image cap">
+							<img  src="imagens/cerro_san_cristobal.png" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -667,7 +762,7 @@
 					<!-- Paseo Bandera -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/pase_bandera.png" alt="Card image cap">
+							<img  src="imagens/pase_bandera.png" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -696,7 +791,7 @@
 					<!-- Parque Bicentenário -->
 					<div class="card">
 						<div class="small-square-image">
-							<img class="card-img-top" src="imagens/parque_bicentenario.png" alt="Card image cap">
+							<img  src="imagens/parque_bicentenario.png" alt="Card image cap">
 						</div>
 						<div class="card-body">
 							<div class="card-body-text">
@@ -740,7 +835,7 @@
 				<!-- Museo Histórico Nacional -->
 				<div class="card">
 					<div class="small-square-image">
-						<img class="card-img-top" src="imagens/museo_historico_nacional.png" alt="Card image cap">
+						<img  src="imagens/museo_historico_nacional.png" alt="Card image cap">
 					</div>
 					<div class="card-body">
 						<div class="card-body-text">
@@ -769,7 +864,7 @@
 				<!-- Museo Nacional de História Natural do Chile -->
 				<div class="card">
 					<div class="small-square-image">
-						<img class="card-img-top" src="imagens/museo_nacional_de_historia_natural_do_chile.png" alt="Card image cap">
+						<img  src="imagens/museo_nacional_de_historia_natural_do_chile.png" alt="Card image cap">
 					</div>
 					<div class="card-body">
 						<div class="card-body-text">
@@ -800,7 +895,7 @@
 				<!-- Museo de la Memoria y los Derechos Humanos -->
 				<div class="card">
 					<div class="small-square-image">
-						<img class="card-img-top" src="imagens/museo_de_la_memoria_y_los_derechos_humanos.png" alt="Card image cap">
+						<img  src="imagens/museo_de_la_memoria_y_los_derechos_humanos.png" alt="Card image cap">
 					</div>
 					<div class="card-body">
 						<div class="card-body-text">
@@ -831,7 +926,7 @@
 				<!-- Museo Interactivo Mirador (MIM) -->
 				<div class="card">
 					<div class="small-square-image">
-						<img class="card-img-top" src="imagens/museo_interactivo_mirador_(MIM).png" alt="Card image cap">
+						<img  src="imagens/museo_interactivo_mirador_(MIM).png" alt="Card image cap">
 					</div>
 					<div class="card-body">
 						<div class="card-body-text">
@@ -861,7 +956,7 @@
 				<!-- Museo Nacional de Bellas Artes -->
 				<div class="card">
 					<div class="small-square-image">
-						<img class="card-img-top" src="imagens/museo_de_la_memoria_y_los_derechos_humanos.png" alt="Card image cap">
+						<img  src="imagens/museo_de_la_memoria_y_los_derechos_humanos.png" alt="Card image cap">
 					</div>
 					<div class="card-body">
 						<div class="card-body-text">
@@ -904,7 +999,7 @@
 			<!-- Cachorro quente completo -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/cachorro_quente.jpg" alt="Card image cap">
+					<img  src="imagens/cachorro_quente.jpg" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -923,7 +1018,7 @@
 			<!-- Bebida pisco sour -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/pisco_sour.png" alt="Card image cap">
+					<img  src="imagens/pisco_sour.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -942,7 +1037,7 @@
 			<!-- Cerveja kross -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/cerveja_kross.png" alt="Card image cap">
+					<img  src="imagens/cerveja_kross.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -963,7 +1058,7 @@
 			<!-- Cerveja Torobayo -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/cerveja_torobayo.png" alt="Card image cap">
+					<img  src="imagens/cerveja_torobayo.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -981,7 +1076,7 @@
 			<!-- Empanada -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/empanada.png" alt="Card image cap">
+					<img  src="imagens/empanada.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -1000,7 +1095,7 @@
 			<!-- Cazuela -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/cazuela.png" alt="Card image cap">
+					<img  src="imagens/cazuela.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -1018,7 +1113,7 @@
 			<!-- Chorrillana -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/chorrillana.png" alt="Card image cap">
+					<img  src="imagens/chorrillana.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -1035,7 +1130,7 @@
 			<!-- Pastel de Choclo -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/pastel_de_choclo.png" alt="Card image cap">
+					<img  src="imagens/pastel_de_choclo.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -1054,7 +1149,7 @@
 			<!-- Torta Tres Leches -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/torta_tres_leches.png" alt="Card image cap">
+					<img  src="imagens/torta_tres_leches.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -1072,7 +1167,7 @@
 			<!-- Alfajor Chileno -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/alfajor_chileno.png" alt="Card image cap">
+					<img  src="imagens/alfajor_chileno.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -1090,7 +1185,7 @@
 			<!-- Machas Parmesanas -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/machas_parmesanas.png" alt="Card image cap">
+					<img  src="imagens/machas_parmesanas.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
@@ -1108,7 +1203,7 @@
 			<!-- Mote con Huesillo -->
 			<div class="card">
 				<div class="small-square-image">
-					<img class="card-img-top" src="imagens/mote_con_huesillo.png" alt="Card image cap">
+					<img  src="imagens/mote_con_huesillo.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<div class="card-body-text">
