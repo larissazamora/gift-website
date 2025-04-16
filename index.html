@@ -219,6 +219,20 @@
 				margin-bottom: 5px;
 			}
 
+			button.btn.btn-link.collapsed {
+				background-color: hsl(206.67deg 7.96% 77.84%);
+				color:#833628;
+				text-decoration: none;
+				width: 100%;
+			}
+
+			button.btn.btn-link:not(.collapsed) {
+				background-color: hsl(206.67deg 7.96% 77.84%);
+				color: hsl(207, 58%, 4%);
+				text-decoration: none;
+				width: 100%;
+			}
+
 			/* Celular */
 			@media (max-width: 768px) {
 				.card-group>.card {
@@ -357,58 +371,63 @@
 
 		<!-- Conteúdo principal -->
 		<div class="container-body" style="display: none;">
-			<div>
-				<!-- Título -->
-				<div class="section-title" style="margin-top: 0">
-					<p class="small-font text-container-homepage section-title" style="padding-top: 10px; padding-bottom: 10px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
-						<strong>DESTINO</strong><br>
-						Cidade de Santiago no Chile
-					</p>
-				</div>
-
 			<!-- Destino -->
-            <div class="card-group">
-					<div class="card">
-						<div class="small-square-image">
-							<img  src="imagens/destino.jpg" alt="Card image cap">
-						</div>
+			<!-- Título -->
+			<div class="section-title" style="margin-top: 0">
+				<p class="small-font text-container-homepage section-title" style="padding-top: 10px; padding-bottom: 10px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
+					<strong>Destino</strong><br>
+					Cidade de Santiago no Chile
+				</p>
+			</div>
+			<!-- Conteúdo -->
+			<div class="card-group">
+				<div class="card">
+					<div class="small-square-image">
+						<img  src="imagens/destino.jpg" alt="Card image cap">
+					</div>
+					<div class="card-body">
 						<div class="card-body">
-							<div class="card-body">
-								<p class="card-text">
-									Vocês irão embarcar para <strong>Santiago, Chile</strong>.
-									Aproveitem essa oportunidade para explorarem novos lugares e criarem
-									ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de 
-									experiências compartilhadas, e nada melhor que uma viagem para celebrar e
-									criar uma lembrança eterna desse momento tão importante na vida de vocês.
-								</p>
-								<p class="card-text">
-									Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes,
-									saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam
-									ainda mais os laços que os unem. Vocês merecem!
-								</p>
-							</div>
+							<p class="card-text">
+								Vocês irão embarcar para <strong>Santiago, Chile</strong>.
+								Aproveitem essa oportunidade para explorarem novos lugares e criarem
+								ótimas e inesquecíveis memórias juntos, afinal a vida a dois é feita de 
+								experiências compartilhadas, e nada melhor que uma viagem para celebrar e
+								criar uma lembrança eterna desse momento tão importante na vida de vocês.
+							</p>
+							<p class="card-text">
+								Vivam aventuras emocionantes, caminhem por paisagens deslumbrantes,
+								saboreiem pratos típicos, mergulhem em culturas diferentes e fortaleçam
+								ainda mais os laços que os unem. Vocês merecem!
+							</p>
 						</div>
 					</div>
 				</div>
+			</div>
 
 			<!-- Instruções para passaporte -->
-			<div class="card mb-4" style="background-color: #833628; color: hsl(206.67deg 7.96% 77.84%); border: none; padding: 20px;">
-				<div class="row g-0 align-items-center">
-					<!-- Imagem -->
-					<div class="col-md-4 d-flex justify-content-center">
-						<img src="imagens/passaporte.png" class="img-fluid rounded" alt="Imagem do passaporte" style="max-width: 100%; height: auto;">
+			<!-- Título -->
+			<div class="section-title" style="margin-top: 0">
+				<p class="small-font text-container-homepage section-title" style="padding-top: 10px; padding-bottom: 10px; width: 100%; margin-bottom: 0;">
+					<strong>Passaportes</strong><br>
+					Faça os passaportes para a viagem
+				</p>
+			</div>
+
+			<!-- Conteúdo -->
+			<div class="card-group">
+				<div class="card">
+					<div class="small-square-image">
+						<img  src="imagens/passaporte.png">
 					</div>
-					<!-- Texto -->
-					<div class="col-md-8">
+					<div class="card-body">
 						<div class="card-body">
-							<h5 class="card-title">PASSAPORTES</h5>
 							<p class="card-text">
 								Agora que o destino foi revelado, é hora de se prepararem. Antes de fazerem as malas, 
 								precisam fazer os passaportes para darmos continuidade nessa aventura. O procedimento 
 								é feito pelo site da Polícia Federal e envolve o agendamento de um atendimento presencial. Corram!
 							</p>
 							<!-- Botão -->
-							<a href="https://www.gov.br/pt-br/servicos/obter-passaporte-comum-para-brasileiro" target="_blank" class="btn d-block mx-auto" style="background-color: hsl(206.67deg 7.96% 77.84%); color: #833628; border: 0;">
+							<a href="https://www.gov.br/pt-br/servicos/obter-passaporte-comum-para-brasileiro" target="_blank" class="link-offset-1">
 								<strong>Clique e siga as instruções</strong>
 							</a>
 						</div>
@@ -420,7 +439,7 @@
 			<div id="containerDetalhes">
 				<!-- Título -->
 				<div class="section-title">
-					<p class="small-font text-container-homepage section-title" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: -2%;">
+					<p class="small-font text-container-homepage section-title" style="padding-top: 10px; padding-bottom: 10px; padding-left:10%; padding-right:10%; width: 100%; margin-bottom: -2%;">
 						<strong>Passeios que Reservamos</strong><br>
 						Para aproveitarem o destino
 					</p>
@@ -494,335 +513,334 @@
 				</div>
 			</div>
 
-
 			<!--  Colapse -->
 			<div id="accordion">
 				<!-- Recomendações Extras -->
 				<div class="card" style="background-color: #833628; border: none;">
+					<!-- Título -->
 					<div class="card-header section-title" id="headingOne" style="border-radius: 0px;">
-						<!-- <p class="mb-0"> -->
-						<button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: hsl(206.67deg 7.96% 77.84%); color:#833628">
+						<button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 							<strong>Recomendações Extras</strong><br>
 							Para explorar a cidade
 						</button>
-						<!-- </p> -->
 				  	</div>
 			  
-					<!-- <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion"> -->
-						<div class="card-group collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion" >
-							<!-- Pátio Bellavista -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/patio_bella_vista.jpg" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Pátio Bellavista</h5>
-										<span class="badge text-bg-success">Gratuito</span>
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											O Patio é um famoso centro comercial, gastronômico e cultural, sendo um dos locais mais visitados por brasileiros 
-									que vão ao Chile. Você pode visitá-lo a qualquer momento do dia. Seja para almoçar, jantar, ou fazer compras. 
-									Ótimo para experimentar a vida noturna em Santiago.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-												📍 <a class="link-offset-1" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
-													Como chegar
-												</a>
-										</div>
-										<div>
-												<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
-										</div>
-									</div>
-								</div>
+					<!-- Conteúdo -->
+					<div class="card-group collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion" >
+						<!-- Pátio Bellavista -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/patio_bella_vista.jpg" alt="Card image cap">
 							</div>
-		
-						<!-- Sky Costanera -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/sky_costanera.jpg" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Sky Costanera</h5>
-										<span class="badge text-bg-secondary">Entre 100 e 115 R$</span>
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											Mirante instalado no maior prédio da América do Sul e que oferece uma visão 360° da capital chilena. 
-											A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura 
-											moderna de Santiago, além de um pôr do sol inesquecível.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-												📍 <a class="link-offset-1" href="https://maps.app.goo.gl/s6zWpS7GdVLetYJQ8" target="_blank">
-													Como chegar
-												</a>
-										</div>
-										<div>
-												<span>🕘 Todos os dias das 10h às 22h. </span>
-										</div>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Restaurante Giratório -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/restaurante_giratorio.png" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Restaurante Giratório</h5>
-										<span class="badge text-bg-secondary">Entre 100 e 200 R$</span>
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											O Giratorio é um restaurante localizado no topo do Sky Costanera no bairro 
-									Providencia, um dos bairros mais bonitos de Santiago, mais especificamente na Av. Nueva Providencia, 2250.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-												📍 <a class="link-offset-1" href="https://maps.app.goo.gl/7hRV9E1zc2wfmMNa7" target="_blank">
-													Como chegar
-												</a>
-										</div>
-										<div>
-												<span>🕘 Sexta e Sábado: 13h às 21:30 Domingo: 13h às 15:30 Segunda a Quinta: 13h às 21h. </span>
-										</div>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Bairro Paris Londres -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/bairro_paris_londres.jpg" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Bairro Paris-Londres</h5>
-										<span class="badge text-bg-success">Gratuito</span>
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											O Bairro Paris-Londres é um bairro turístico no centro histórico de Santiago, Chile. 
-									O bairro é conhecido pelo seu estilo arquitetônico europeu e pelas suas ruas estreitas e sinuosas.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-												📍 <a class="link-offset-1" href="https://maps.app.goo.gl/Soo1qD9PmjRDdapN9" target="_blank">
-												Como chegar
-												</a>
-										</div>
-										<div>
-												<span>🕘 Qualquer horário. </span>
-										</div>
-									</div>
-		
-								</div>
-							</div>
-		
-							<!-- Plaza de Armas -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/plaza_armas.png" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Plaza de Armas</h5>
-										<span class="badge text-bg-success">Gratuito</span>
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											Fundada por  Pedro de Valdivia em 1541, originalmente tinha como função ser um campo de treinamento militar 
-									e centro estratégico do assentamento espanhol para sua expansão e conquista.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-												📍 <a class="link-offset-1" href="https://maps.app.goo.gl/kJaJ6eHE7tkCLFS59" target="_blank">
-												Como chegar
-												</a>
-										</div>
-										<div>
-												<span>🕘 Qualquer horário. </span>
-										</div>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Palacio de la Moneda -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/palacio_de_las_monedas.png" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Palacio de la Moneda</h5>
-										<span class="badge text-bg-success">Gratuito</span>
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											Além de fábrica de moedas, também já foi utilizada como residência oficial do 
-											presidente e atualmente é usada apenas como seu local de trabalho. Palco do Golpe Militar, 
-											o palácio já foi bombardeado por aviões da força aérea. Para realizar o tour é necessário fazer 
-											um agendamento através do site oficial.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-												📍 <a class="link-offset-1" href="https://maps.app.goo.gl/hG4V9RtzYvXSyB2W6" target="_blank">
-												Como chegar
-												</a>
-										</div>
-		
-										<div>
-												📆 <a href="https://visitaspatrimonio.presidencia.cl/" target="_blank" class="link-offset-1">
-												Agendar Tour
-												</a>
-										</div>
-										<div>
-												<span>🕘 Segunda a quinta: 15h e 16:30 Sexta 15h. </span>
-										</div>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Cerro Santa Lucia -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/cerro_santa_lucia.png" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-									<h5 class="card-title">Cerro Santa Lucia</h5>
-										<span class="badge text-bg-success">Gratuito</span>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Pátio Bellavista</h5>
+									<span class="badge text-bg-success">Gratuito</span>
 									<div class="border-top my-3 custom-border"></div>
 									<p class="card-text">
-										Uns dos lugares mais conhecidos de Santiago, embora não muito alto, se eleva uns 70 metros 
-									e oferece umas das melhores vistas de 360 graus da cidade, O cerro tem sido parte dos acontecimentos 
-									mais importantes de Santiago.
+										O Patio é um famoso centro comercial, gastronômico e cultural, sendo um dos locais mais visitados por brasileiros 
+								que vão ao Chile. Você pode visitá-lo a qualquer momento do dia. Seja para almoçar, jantar, ou fazer compras. 
+								Ótimo para experimentar a vida noturna em Santiago.
 									</p>
 								</div>
 								<div class="card-body-info">
 									<div>
-									📍 <a class="link-offset-1" href="https://maps.app.goo.gl/rzpH4L5aRc7wogwM6" target="_blank">
-										Como chegar
-										</a>
+											📍 <a class="link-offset-1" href="https://maps.app.goo.gl/JBHFNk8yd16VQB3v6" target="_blank">
+												Como chegar
+											</a>
 									</div>
 									<div>
-											<span>🕘 De Terça a Domingo das 09h às 19h</span>
-									</div>
-								</div>
-								</div>
-							</div>
-		
-							<!-- Cerro San Cristóbal -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/cerro_san_cristobal.png" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Cerro San Cristóbal</h5>
-										<span class="badge text-bg-secondary">Entre 10 e 15 R$</span>
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											Com uma altitude de 880m o Cerro San Cristóbal é uns dos lugares mais emblemáticos de Santiago. 
-											Nele você encontrará o santuário e mirador da Virgem do Cerro São Cristóbal, o Zoológico Nacional de Chile,
-											Jardim Japonês, o funicular e o teleférico. No topo tem um pequeno 
-											centro comercial, onde pode comprar presentes típicos. Para subir e descer também 
-											pode usar o funicular ou o teleférico.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-										📍 <a class="link-offset-1" href="https://maps.app.goo.gl/opMNXE39EwX3Mab29" target="_blank">
-											Como chegar
-										</a>
-										</div>
-										<div>
-												<span>🕘 Terça a Domingo das 10h às 19h45. </span>
-										</div>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Paseo Bandera -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/pase_bandera.png" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Paseo Bandera</h5>
-										<span class="badge text-bg-success">Gratuito</span>
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											Dentro do centro histórico de Santiago, está localizada a rua Bandera. No seu melhor momento numerosos bares 
-											e restaurantes eram frequentados por escritores e poetas, na atualidade a colorida rua abriga importantes
-											prédios históricos e entidades financeiras do país como a Bolsa de comercio de Santiago e Museu de Arte Precolombino.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-												📍 <a class="link-offset-1" href="https://maps.app.goo.gl/pMjnbqXTiAGMEBxw6" target="_blank">
-												Como chegar
-												</a>
-										</div>
-										<div>
-												<span>🕘 Qualquer horário. </span>
-										</div>
-								</div>
-								</div>
-							</div>
-		
-							<!-- Parque Bicentenário -->
-							<div class="card">
-								<div class="small-square-image">
-									<img  src="imagens/parque_bicentenario.png" alt="Card image cap">
-								</div>
-								<div class="card-body">
-									<div class="card-body-text">
-										<h5 class="card-title">Parque Bicentenário</h5>
-										<span class="badge text-bg-success">Gratuito</span>                    
-										<div class="border-top my-3 custom-border"></div>
-										<p class="card-text">
-											O Parque Bicentenário é uma das áreas verdes mais importantes de Santiago, com uma extensão 
-											total de 27 hectares ao longo das margens orientais do rio Mapocho. 
-											O parque abriga cerca de 5.460 árvores, das quais mais de 2.600 são espécies nativas, o que 
-											contribui para a riqueza de sua biodiversidade. Uma das maiores atrações é a adorável lagoa do norte.
-											Esse habitat coexiste cisnes em preto, Taguas, garças e trilhas, fornecendo um show natural que encanta os visitantes.
-										</p>
-									</div>
-									<div class="card-body-info">
-										<div>
-												📍 <a class="link-offset-1" href="hhttps://maps.app.goo.gl/jGjkBy2MHm3W3EEP6" target="_blank">
-													Como chegar
-												</a>
-										</div>
-										<div>
-												<span>🕘 Todos os dias das 08h às 23h. </span>
-										</div>
+											<span>🕘 Domingo a terça-feira: 10h às 01h - Quarta-feira: 10h às 02h - Quinta a sábado: 10h às 03h. </span>
 									</div>
 								</div>
 							</div>
 						</div>
-					<!-- </div> -->
+	
+					<!-- Sky Costanera -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/sky_costanera.jpg" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Sky Costanera</h5>
+									<span class="badge text-bg-secondary">Entre 100 e 115 R$</span>
+									<div class="border-top my-3 custom-border"></div>
+									<p class="card-text">
+										Mirante instalado no maior prédio da América do Sul e que oferece uma visão 360° da capital chilena. 
+										A adrenalina de sentir a cidade a seus pés. Aprecie a Cordilheira dos Andes e surpreenda-se com a arquitetura 
+										moderna de Santiago, além de um pôr do sol inesquecível.
+									</p>
+								</div>
+								<div class="card-body-info">
+									<div>
+											📍 <a class="link-offset-1" href="https://maps.app.goo.gl/s6zWpS7GdVLetYJQ8" target="_blank">
+												Como chegar
+											</a>
+									</div>
+									<div>
+											<span>🕘 Todos os dias das 10h às 22h. </span>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Restaurante Giratório -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/restaurante_giratorio.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Restaurante Giratório</h5>
+									<span class="badge text-bg-secondary">Entre 100 e 200 R$</span>
+									<div class="border-top my-3 custom-border"></div>
+									<p class="card-text">
+										O Giratorio é um restaurante localizado no topo do Sky Costanera no bairro 
+								Providencia, um dos bairros mais bonitos de Santiago, mais especificamente na Av. Nueva Providencia, 2250.
+									</p>
+								</div>
+								<div class="card-body-info">
+									<div>
+											📍 <a class="link-offset-1" href="https://maps.app.goo.gl/7hRV9E1zc2wfmMNa7" target="_blank">
+												Como chegar
+											</a>
+									</div>
+									<div>
+											<span>🕘 Sexta e Sábado: 13h às 21:30 Domingo: 13h às 15:30 Segunda a Quinta: 13h às 21h. </span>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Bairro Paris Londres -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/bairro_paris_londres.jpg" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Bairro Paris-Londres</h5>
+									<span class="badge text-bg-success">Gratuito</span>
+									<div class="border-top my-3 custom-border"></div>
+									<p class="card-text">
+										O Bairro Paris-Londres é um bairro turístico no centro histórico de Santiago, Chile. 
+								O bairro é conhecido pelo seu estilo arquitetônico europeu e pelas suas ruas estreitas e sinuosas.
+									</p>
+								</div>
+								<div class="card-body-info">
+									<div>
+											📍 <a class="link-offset-1" href="https://maps.app.goo.gl/Soo1qD9PmjRDdapN9" target="_blank">
+											Como chegar
+											</a>
+									</div>
+									<div>
+											<span>🕘 Qualquer horário. </span>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+	
+						<!-- Plaza de Armas -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/plaza_armas.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Plaza de Armas</h5>
+									<span class="badge text-bg-success">Gratuito</span>
+									<div class="border-top my-3 custom-border"></div>
+									<p class="card-text">
+										Fundada por  Pedro de Valdivia em 1541, originalmente tinha como função ser um campo de treinamento militar 
+								e centro estratégico do assentamento espanhol para sua expansão e conquista.
+									</p>
+								</div>
+								<div class="card-body-info">
+									<div>
+											📍 <a class="link-offset-1" href="https://maps.app.goo.gl/kJaJ6eHE7tkCLFS59" target="_blank">
+											Como chegar
+											</a>
+									</div>
+									<div>
+											<span>🕘 Qualquer horário. </span>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Palacio de la Moneda -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/palacio_de_las_monedas.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Palacio de la Moneda</h5>
+									<span class="badge text-bg-success">Gratuito</span>
+									<div class="border-top my-3 custom-border"></div>
+									<p class="card-text">
+										Além de fábrica de moedas, também já foi utilizada como residência oficial do 
+										presidente e atualmente é usada apenas como seu local de trabalho. Palco do Golpe Militar, 
+										o palácio já foi bombardeado por aviões da força aérea. Para realizar o tour é necessário fazer 
+										um agendamento através do site oficial.
+									</p>
+								</div>
+								<div class="card-body-info">
+									<div>
+											📍 <a class="link-offset-1" href="https://maps.app.goo.gl/hG4V9RtzYvXSyB2W6" target="_blank">
+											Como chegar
+											</a>
+									</div>
+	
+									<div>
+											📆 <a href="https://visitaspatrimonio.presidencia.cl/" target="_blank" class="link-offset-1">
+											Agendar Tour
+											</a>
+									</div>
+									<div>
+											<span>🕘 Segunda a quinta: 15h e 16:30 Sexta 15h. </span>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Cerro Santa Lucia -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/cerro_santa_lucia.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+								<h5 class="card-title">Cerro Santa Lucia</h5>
+									<span class="badge text-bg-success">Gratuito</span>
+								<div class="border-top my-3 custom-border"></div>
+								<p class="card-text">
+									Uns dos lugares mais conhecidos de Santiago, embora não muito alto, se eleva uns 70 metros 
+								e oferece umas das melhores vistas de 360 graus da cidade, O cerro tem sido parte dos acontecimentos 
+								mais importantes de Santiago.
+								</p>
+							</div>
+							<div class="card-body-info">
+								<div>
+								📍 <a class="link-offset-1" href="https://maps.app.goo.gl/rzpH4L5aRc7wogwM6" target="_blank">
+									Como chegar
+									</a>
+								</div>
+								<div>
+										<span>🕘 De Terça a Domingo das 09h às 19h</span>
+								</div>
+							</div>
+							</div>
+						</div>
+	
+						<!-- Cerro San Cristóbal -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/cerro_san_cristobal.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Cerro San Cristóbal</h5>
+									<span class="badge text-bg-secondary">Entre 10 e 15 R$</span>
+									<div class="border-top my-3 custom-border"></div>
+									<p class="card-text">
+										Com uma altitude de 880m o Cerro San Cristóbal é uns dos lugares mais emblemáticos de Santiago. 
+										Nele você encontrará o santuário e mirador da Virgem do Cerro São Cristóbal, o Zoológico Nacional de Chile,
+										Jardim Japonês, o funicular e o teleférico. No topo tem um pequeno 
+										centro comercial, onde pode comprar presentes típicos. Para subir e descer também 
+										pode usar o funicular ou o teleférico.
+									</p>
+								</div>
+								<div class="card-body-info">
+									<div>
+									📍 <a class="link-offset-1" href="https://maps.app.goo.gl/opMNXE39EwX3Mab29" target="_blank">
+										Como chegar
+									</a>
+									</div>
+									<div>
+											<span>🕘 Terça a Domingo das 10h às 19h45. </span>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Paseo Bandera -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/pase_bandera.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Paseo Bandera</h5>
+									<span class="badge text-bg-success">Gratuito</span>
+									<div class="border-top my-3 custom-border"></div>
+									<p class="card-text">
+										Dentro do centro histórico de Santiago, está localizada a rua Bandera. No seu melhor momento numerosos bares 
+										e restaurantes eram frequentados por escritores e poetas, na atualidade a colorida rua abriga importantes
+										prédios históricos e entidades financeiras do país como a Bolsa de comercio de Santiago e Museu de Arte Precolombino.
+									</p>
+								</div>
+								<div class="card-body-info">
+									<div>
+											📍 <a class="link-offset-1" href="https://maps.app.goo.gl/pMjnbqXTiAGMEBxw6" target="_blank">
+											Como chegar
+											</a>
+									</div>
+									<div>
+											<span>🕘 Qualquer horário. </span>
+									</div>
+							</div>
+							</div>
+						</div>
+	
+						<!-- Parque Bicentenário -->
+						<div class="card">
+							<div class="small-square-image">
+								<img  src="imagens/parque_bicentenario.png" alt="Card image cap">
+							</div>
+							<div class="card-body">
+								<div class="card-body-text">
+									<h5 class="card-title">Parque Bicentenário</h5>
+									<span class="badge text-bg-success">Gratuito</span>                    
+									<div class="border-top my-3 custom-border"></div>
+									<p class="card-text">
+										O Parque Bicentenário é uma das áreas verdes mais importantes de Santiago, com uma extensão 
+										total de 27 hectares ao longo das margens orientais do rio Mapocho. 
+										O parque abriga cerca de 5.460 árvores, das quais mais de 2.600 são espécies nativas, o que 
+										contribui para a riqueza de sua biodiversidade. Uma das maiores atrações é a adorável lagoa do norte.
+										Esse habitat coexiste cisnes em preto, Taguas, garças e trilhas, fornecendo um show natural que encanta os visitantes.
+									</p>
+								</div>
+								<div class="card-body-info">
+									<div>
+											📍 <a class="link-offset-1" href="hhttps://maps.app.goo.gl/jGjkBy2MHm3W3EEP6" target="_blank">
+												Como chegar
+											</a>
+									</div>
+									<div>
+											<span>🕘 Todos os dias das 08h às 23h. </span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<!-- Museus -->
 				<div class="card" style="background-color: #833628; border: none;">
+					<!-- Título -->
 					<div class="card-header section-title" id="headingTwo"  style="border-radius: 0px;">
 						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: hsl(206.67deg 7.96% 77.84%); color:#833628">
+							<button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 								<strong>Alguns Museus</strong><br>
 								Para quem curte arte, história e cultura
 							</button>
 						</h5>
 					</div>
 
+					<!-- Conteúdo -->
 					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 						<div class="card-group">
 								<!-- Museo Histórico Nacional -->
@@ -981,15 +999,17 @@
 				
 				<!-- Culinária -->
 				<div class="card" style="background-color: #833628; border: none;">
+					<!-- Título -->
 					<div class="card-header section-title" id="headingThree" style="border-radius: 0px;">
 						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: hsl(206.67deg 7.96% 77.84%); color:#833628">
+							<button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 								<strong>Alguns Pratos Típicos</strong><br>
 								Para experimentarem a culinária chilena
 							</button>
 						</h5>
 					</div>
 
+					<!-- Conteúdo -->
 					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 						<div class="card-group">
 							<!-- Cachorro quente completo -->
@@ -1219,19 +1239,22 @@
 					</div>
 				</div>
 
+				<!-- Aplicativos e Ferramentas -->
 				<div class="card" style="background-color: #833628; border: none;">
+					<!-- Título -->
 					<div class="card-header section-title" id="headingFour" style="border-radius: 0px;">
 						<h5 class="mb-0">
-							<button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color: hsl(206.67deg 7.96% 77.84%); color:#833628">
+							<button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 								<strong>Aplicativos e Ferramentas</strong><br>
 								Para facilitar a sua viagem
 							</button>
 						</h5>
 					</div>
 
+					<!-- Conteúdo -->
 					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 						<div class="card-group">
-							<!-- Chip telefônico -->
+							<!-- Chip Telefônico -->
 							<div class="card">
 								<div class="card-body">
 									<div class="card-body-text">
@@ -1282,15 +1305,7 @@
 			</div>
 
 			<!-- Mensagem final -->
-			<div>
-				<!-- Título -->
-				<div class="section-title">
-					<p class="small-font text-container-homepage section-title" style="padding-top: 30px; padding-bottom: 30px; padding-left:15%; padding-right:15%; width: 100%; margin-bottom: 0;">
-						<strong>Aos Noivos</strong><br>
-						Uma mensagem especial
-					</p>
-				</div>
-
+			<div>				
 				<!-- Texto da mensagem -->
 				<div class="row align-items-center">
 					<div class="col-md-6">
