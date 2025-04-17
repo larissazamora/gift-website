@@ -35,7 +35,8 @@
 				align-items: center;
 				text-align: center;
 				color: hsl(206.67deg 7.96% 77.84%);
-				padding: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
 				box-sizing: border-box; /* Ensure padding doesn't affect layout */
 			}
 
@@ -194,26 +195,6 @@
 				object-fit: cover;
 			}
 			
-			@media (min-width: 768px) {
-				.card-body {
-					justify-content: space-between;
-				}
-
-				.card-group>.card>.card-body>.card-body-text {
-					min-height: 90%;
-				}
-
-				.card-group>.card>.card-body>.card-body-text-passeio {
-					min-height: 80%;
-				}
-
-				.card-group>.card>.card-body>.card-body-info {
-					height: 20%;
-					display: flex;
-        			flex-direction: column;
-				}
-			}
-
 			.border-top {
 				margin-top: 5px;
 				margin-bottom: 5px;
@@ -239,7 +220,34 @@
 				border-bottom: none;
 			}
 
-			/* Celular */
+			/* Só para telas grandes */
+			@media (min-width: 768px) {
+				.card-body {
+					justify-content: space-between;
+				}
+
+				.card-group>.card>.card-body>.card-body-text {
+					min-height: 90%;
+				}
+
+				.card-group>.card>.card-body>.card-body-text-passeio {
+					min-height: 80%;
+				}
+
+				.card-group>.card>.card-body>.card-body-info {
+					height: 20%;
+					display: flex;
+        			flex-direction: column;
+				}
+
+				.img-header {
+					height: 434px;
+					object-fit: contain;
+					margin-bottom: 15px;
+				}
+			}
+
+			/* Só para celular */
 			@media (max-width: 768px) {
 				.card-group>.card {
 					padding-left: 8%;
@@ -326,7 +334,6 @@
 
 				.home-page-image {
 					display: grid;
-					width: 375px;
 					height: 234px;
 					overflow: visible;
 					position: relative;
@@ -336,6 +343,10 @@
 					left: 0px;
 					z-index: auto;
 				}	
+
+				.img-header {
+					object-fit: contain;
+				}
 			}
 		</style>
 	</head>
@@ -1407,7 +1418,7 @@
 							<div class="card">
 								<div class="card-body">
 									<div class="card-body-text">
-										<h5 class="card-title">Chip telefônico</h5>
+										<h5 class="card-title">Chip Telefônico</h5>
 										<div class="border-top my-3 custom-border"></div>
 										<p class="card-text">
 											O ideal é adquirir um Chip Internacional ainda no Brasil, para que já chegue ativado 
@@ -1569,7 +1580,7 @@
 							<div class="card">
 								<div class="card-body">
 									<div class="card-body-text">
-										<h5 class="card-title">Targeta BIP - Transporte Público</h5>
+										<h5 class="card-title">Tarjeta BIP - Transporte Público</h5>
 										<div class="border-top my-3 custom-border"></div>
 										<p class="card-text">
 											A Tarjeta BIP é um cartão de pagamento oficial para transporte público (metrô e ônibus) em Santiago. 
